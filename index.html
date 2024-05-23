@@ -664,7 +664,14 @@
 	<!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
-
+    <script>
+        document.getElementById('download-cv-btn').addEventListener('click', function() {
+            const link = document.createElement('a');
+            link.href = './Yash CV.pdf';  // Replace with the URL to your CV
+            link.download = 'Yash CV.pdf';  // The name for the downloaded file
+            link.click();
+        });
+        </script>
     <!-- bootstrap 3 affix -->
     <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
