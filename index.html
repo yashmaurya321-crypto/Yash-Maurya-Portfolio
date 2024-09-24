@@ -27,7 +27,197 @@
         .header-content{
         color: black;
         }
-        
+        #experience {
+    background-color: #f8f9fa;
+    padding: 100px 0;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #f85c70;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #f85c70;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover::after {
+    background-color: #f85c70;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #f85c70;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #f85c70;
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #f85c70;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #f85c70 transparent transparent;
+}
+
+.right::after {
+    left: -16px;
+}
+
+.timeline-content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 5px 25px 0 rgba(0,0,0,.2);
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px 0 rgba(0,0,0,.2);
+}
+
+.timeline-content h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f85c70;
+    margin-bottom: 10px;
+}
+
+.timeline-content h3 {
+    font-size: 1em;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.timeline-content h4 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.timeline-content p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.experience-icon {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f85c70;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+.skills {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills li {
+    background-color: #f1f3f5;
+    color: #495057;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8em;
+}
+
+@media screen and (max-width: 600px) {
+    .timeline::after {
+        left: 31px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .timeline-item::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .left::after, .right::after {
+        left: 15px;
+    }
+    
+    .right {
+        left: 0%;
+    }
+}
+        @media (max-width: 768px) {
+      .navbar-nav {
+        display: none;
+      }
+
+      .navbar-toggler {
+        display: block;
+      }
+    }
     </style>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
@@ -42,7 +232,7 @@
             <div class="header-content">
                 <h4 class="header-subtitle" >Hello, I am</h4>
                 <h1 class="header-title">Yash Maurya</h1>
-                <h6 class="header-mono" >MERN Stack | Developer</h6>
+                <h6 class="header-mono" >Full Stack Developer</h6>
                 
             </div>
         </div>
@@ -68,7 +258,7 @@
                     <img src="assets/images/images/Yash (11).jpg" alt="" class="brand-img">
                     <li class="brand-txt">
                         <h5 class="brand-title">Yash Maurya</h5>
-                        <div class="brand-subtitle">Web Designer | Developer</div>
+                        <div class="brand-subtitle">Web & App Designer | Developer</div>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
@@ -77,6 +267,9 @@
                     </li>
                     <li class="nav-item">
                         <a href="#certificates" class="nav-link">Certificate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link">Experience</a>
                     </li>
                     <li class="nav-item last-item">
                         <a href="#contact" class="nav-link">Contact</a>
@@ -91,7 +284,7 @@
                 <h3 class="font-weight-bold">Who am I ?</h3>
                 <span class="line mb-5"></span>
                 <h5 class="mb-3">A Web & App Developer</h5>
-                <p class="mt-20">I am a second-year BCA student specializing in MERN stack and React Native, focusing on full-stack web development and mobile app creation. I am passionate about technology and aspire to work as a developer in the tech industry</p>
+                <p class="mt-20">I am a third-year BCA student specializing in MERN stack and React Native, focusing on full-stack web development and mobile app creation. I am passionate about technology and aspire to work as a developer in the tech industry</p>
                 <button class="btn btn-outline-danger" id="download-cv-btn"><i class="icon-down-circled2 "></i>Download My CV</button>
             </div>
             <div class="col-lg-4 about-card">
@@ -159,7 +352,7 @@
                     </div>
                     <div class="card-body">
                         <h6 class="title text-danger"> Present</h6>
-                        <P>MERN Stack Developer</P>
+                        <P>Full Stack Developer</P>
                         <P class="subtitle">Expert in MERN Stack (React.js, Node.js, MongoDB, Express.js), React Native, Redux, REST API, and some knowledge in Digital Marketing.</P>
                     </div>
                 </div>
@@ -173,15 +366,19 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <h6 class="title text-danger">2019 - 2022</h6>
+                        <h6 class="title text-danger">2023 - 2024</h6>
+                        <P>SYBCA</P>
+                        <P class="subtitle">Tilak Maharashtra Vidyapith, Pune University, 83%</P>
+                        <hr>
+                        <h6 class="title text-danger">2021 - 2023</h6>
                         <P>FYBCA</P>
                         <P class="subtitle">Tilak Maharashtra Vidyapith, Pune University, 71%</P>
                         <hr>
-                        <h6 class="title text-danger">2017 - 2019</h6>
+                        <h6 class="title text-danger">2020 - 2021</h6>
                         <P>SYJC</P>
                         <P class="subtitle">Expert College, Mumbai University, 85%</P>
                         <hr>
-                        <h6 class="title text-danger">2015 - 2017</h6>
+                        <h6 class="title text-danger">2016 - 2018</h6>
                         <P>SSC</P>
                         <P class="subtitle">Expert International High School, Mumbai University, 71.40%</P>
                     </div>
@@ -270,7 +467,7 @@
                             <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">3</h1>
+                            <h1 class="text-danger font-weight-bold font40">5</h1>
                             <p class="text-light mb-1">Personal Project</p>
                         </div>
                     </div>
@@ -292,7 +489,7 @@
                             <div class="m-auto"><i class="ti-bookmark-alt icon-xl"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">80%</h1>
+                            <h1 class="text-danger font-weight-bold font40">83%</h1>
                             <p class="text-light mb-1">BCA 2nd Year</p>
                         </div>
                     </div>
@@ -316,6 +513,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5 hovereffect">
                         <div class="col-1 text-danger pt-1"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16"><path fill="#f85c70" d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm6 11a1 1 0 1 0-2 0a1 1 0 0 0 2 0"/></svg></i></div>
@@ -346,7 +544,57 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="mb-5"><span class="text-danger">My</span> Experience</h2>
+            <div class="timeline">
+                <!-- Existing Experience -->
+                <div class="timeline-item left wow fadeInLeft">
+                    <div class="timeline-content">
+                        <div class="experience-icon">
+                            <i class="ti-desktop"></i>
+                        </div>
+                        <h3 class="date">June 2024 - September 2024</h3>
+                        <h1>React Native Developer Intern</h1>
+                        <h4>MNNLR</h4>
+                        <p>Developed and maintained website and applications using the MERN stack and React Native. Collaborated with senior developers on various projects and improved site performance by 25%.</p>
+                        <ul class="skills">
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>MongoDB</li>
+                            <li>React Native</li>
+                            <li>Figma</li>
+                            <li>Redux</li>
+                            <li>API Integration</li>
+                        </ul>
+                    </div>
+                </div>
+    
+             
+                <div class="timeline-item right wow fadeInRight">
+                    <div class="timeline-content">
+                        <div class="experience-icon">
+                            <i class="ti-mobile"></i>
+                        </div>
+                        <h3 class="date">September 2024 - Present</h3>
+                        <h1>Android Developer Intern</h1>
+                        <h4>Geneus Solutions</h4>
+                        <p>Working on Full Stack App Development from Froentend to backend to Deployment </p>
+                        <ul class="skills">
+                            <li>MongoDB</li>
+                            <li>Express.js</li>
+                            <li>React Native</li>
+                            <li>Node.js</li>
+                            <li>Redux</li>
+                            <li>Figma</li>
+                            <li>API Integration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 <!-- Portfolio Section -->
 <!-- Portfolio Section -->
 <section id="portfolio" class="py-5 bg-light">
@@ -366,12 +614,26 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 portfolio-item">
+                    <img src="assets/images/396shots_so.png" class="card-img-top" alt="E-commerce App" data-toggle="modal" data-target="#attendanceModal">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Attendence</h5>
+                        <p class="card-text">A mobile app for Managing attendence</p>
+                    </div>
+                    <div class="card-footer text-muted d-flex justify-content-between align-items-center">
+                        <span>React Native</span>
+                        <a href="#" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#attendanceModal">View Details</a>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-4 mb-4">
                 <div class="card h-100 portfolio-item">
                     <img src="assets/imgs/2 (1).png" class="card-img-top" alt="E-commerce App" data-toggle="modal" data-target="#ecommerceModal">
                     <div class="card-body">
                         <h5 class="card-title font-weight-bold">E-commerce App</h5>
-                        <p class="card-text">A mobile app for buying and selling products online with secure payment integration.</p>
+                        <p class="card-text">A Website for buying and selling products online with secure payment integration.</p>
                     </div>
                     <div class="card-footer text-muted d-flex justify-content-between align-items-center">
                         <span>React Native</span>
@@ -465,7 +727,37 @@
         </div>
     </div>
 </div>
-
+<div class="modal fade" id="attendanceModal" tabindex="-1" role="dialog" aria-labelledby="attendanceModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title font-weight-bold" id="attendanceModalLabel">Attendance App</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/images/396shots_so.png" class="img-fluid mb-3" alt="Attendance App">
+                <p>This app allows users to track and manage attendance, keeping accurate records for schools, companies, and other organizations.</p>
+                <p><b>Key features:</b></p>
+                <ul>
+                   
+                    <li><b>Attendance Tracking:</b> Record daily attendance with timestamps</li>
+                    <li><b>Creation of new Employee:</b> Can create new employee with unique ID</li>
+                    <li><b>History of Attendance:</b> Attendence History of Perticular Employee</li>
+                </ul>
+                <p><b>Technologies Used:</b></p>
+                <ul>
+                    
+                    <li><b>Frontend:</b> React Native, Local Storage</li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+   
 <div class="modal fade" id="blogModal" tabindex="-1" role="dialog" aria-labelledby="blogModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -667,7 +959,7 @@
     <script>
         document.getElementById('download-cv-btn').addEventListener('click', function() {
             const link = document.createElement('a');
-            link.href = './Yash CV.pdf';  // Replace with the URL to your CV
+            link.href = './Yash(6)CV.pdf';  // Replace with the URL to your CV
             link.download = 'Yash CV.pdf';  // The name for the downloaded file
             link.click();
         });
