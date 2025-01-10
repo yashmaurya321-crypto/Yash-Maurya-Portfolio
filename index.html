@@ -645,6 +645,34 @@
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 portfolio-item">
+                    <img src="assets/images/Course.jpeg" class="card-img-top" alt="LMS System" data-toggle="modal" data-target="#LmsModal">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">LMS System</h5>
+                        <p class="card-text">A Website where students can buy and access Course.</p>
+                    </div>
+                    <div class="card-footer text-muted d-flex justify-content-between align-items-center">
+                        <span>MERN Stack</span>
+                        <a href="#" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#LmsModal">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 portfolio-item">
+                    <img src="assets/images/Doctor-booking.png" class="card-img-top" alt="Doctor Booking App" data-toggle="modal" data-target="#doctorBookingModal">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Doctor Appointment App</h5>
+                        <p class="card-text">A App where person can appoint Doctor according to theri concern</p>
+                    </div>
+                    <div class="card-footer text-muted d-flex justify-content-between align-items-center">
+                        <span>React Native</span>
+                        <a href="#" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#doctorBookingModal">View Details</a>
+                    </div>
+                </div>
+            </div>
            
             <div class="col-md-4 mb-4">
                 <div class="card h-100 portfolio-item">
@@ -696,6 +724,103 @@
     </div>
 </div>
 
+<div class="modal fade" id="doctorBookingModal" tabindex="-1" role="dialog" aria-labelledby="doctorBookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title font-weight-bold" id="doctorBookingModalLabel">Doctor Booking App</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/images/Doctor-booking.png" class="img-fluid mb-3" alt="Doctor Booking App">
+                <p>
+                    A mobile application built using React Native and Expo that allows users to book doctor appointments based on their medical concerns. The app focuses on providing a seamless booking experience with state management handled through Redux.
+                </p>
+
+                <div class="features-section mb-4">
+                    <h6 class="font-weight-bold">Key Features:</h6>
+                    <ul>
+                        <li><b>Doctor Search:</b> Users can search for doctors based on:
+                            <ul>
+                                <li>Medical specialties (Cardiologist, Pediatrician, etc.)</li>
+                                <li>Common health concerns</li>
+                                <li>Doctor ratings and reviews</li>
+                            </ul>
+                        </li>
+                        <li><b>Appointment Booking:</b>
+                            <ul>
+                                <li>View doctor availability in real-time</li>
+                                <li>Select preferred time slots</li>
+                                <li>Book instant appointments</li>
+                                <li>Receive booking confirmations</li>
+                            </ul>
+                        </li>
+                       
+                        <li><b>Doctor Profiles:</b>
+                            <ul>
+                                <li>Detailed doctor information</li>
+                                <li>Educational background</li>
+                                <li>Patient reviews and ratings</li>
+                                <li>Available time slots</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tech-stack bg-light p-3 rounded mb-4">
+                    <h6 class="font-weight-bold">Technology Stack:</h6>
+                    <ul>
+                        <li><b>Frontend:</b>
+                            <ul>
+                                <li>React Native with Expo framework</li>
+                                <li>Redux for state management</li>
+                                <li>React Navigation for screen management</li>
+                               
+                            </ul>
+                        </li>
+                        <li><b>UI/UX Features:</b>
+                            <ul>
+                                <li>Custom animations and transitions</li>
+                                <li>Responsive layouts</li>
+                                <li>Cross-platform compatibility</li>
+                                <li>Offline data persistence</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="implementation-details mb-4">
+                    <h6 class="font-weight-bold">Implementation Details:</h6>
+                    <ul>
+                        <li><b>State Management:</b>
+                            <ul>
+                                <li>Redux store for managing appointment data</li>
+                                <li>Redux persist for local storage</li>
+                                <li>Action creators for booking operations</li>
+                            </ul>
+                        </li>
+                        <li><b>Navigation:</b>
+                            <ul>
+                                <li>Stack navigation for main flows</li>
+                                <li>Tab navigation for main sections</li>
+                                <li>Modal navigation for booking process</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="links">
+                    <h6 class="font-weight-bold">App Link:</h6>
+                    <p>Download the app from: <a href="https://drive.google.com/file/d/1CI8L0O3s5iz45hbJHU0S8dzDRu8M5riW/view?usp=drive_link">App Link</a></p>
+                    <small class="text-muted">Note: This is a frontend-only implementation. Backend services were not implemented in this version.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="modal fade" id="ecommerceModal" tabindex="-1" role="dialog" aria-labelledby="ecommerceModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
@@ -728,6 +853,76 @@
                 
 
                 </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="LmsModal" tabindex="-1" role="dialog" aria-labelledby="lmsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title font-weight-bold" id="lmsModalLabel">Learning Management System</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/images/Course.jpeg" class="img-fluid mb-3" alt="LMS Platform">
+                
+                <div class="features-section mb-4">
+                    <h6 class="font-weight-bold">Key Features:</h6>
+                    
+                    <div class="user-features mb-3">
+                        <h6 class="text-primary">For Users:</h6>
+                        <ul>
+                            <li><b>Sign-Up/Login Required:</b> Users must log in to access the platform, purchase courses, and access their personalized dashboards</li>
+                            <li><b>Search and Purchase Courses:</b> After logging in, users can easily search, filter, and purchase courses in their area of interest</li>
+                            <li><b>Student Dashboard:</b> Once enrolled, students can track their course progress, interact with content, and manage their learning</li>
+                            <li><b>Image Upload:</b> Students can upload images, such as profile pictures or course-related media, enhancing their experience. Images are securely stored using Cloudinary</li>
+                        </ul>
+                    </div>
+
+                    <div class="admin-features mb-3">
+                        <h6 class="text-primary">For Admins:</h6>
+                        <ul>
+                            <li><b>Admin Dashboard:</b> Admins can log in to a dedicated dashboard to create and manage courses, view course details, and monitor user activity</li>
+                            <li><b>Course Management:</b> Admins can create new courses, edit existing ones, and ensure they meet the needs of learners</li>
+                            <li><b>Access User Info:</b> Admins can view key user data, such as the number of users, names, emails, and other metrics for analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="technology-stack bg-light p-3 rounded">
+                    <h6 class="font-weight-bold">Technology Stack:</h6>
+                    <ul>
+                        <li><b>MERN Stack:</b>
+                            <ul>
+                                <li>MongoDB for flexible, document-based data storage</li>
+                                <li>Express.js to build powerful backend services</li>
+                                <li>React.js for creating dynamic and responsive user interfaces</li>
+                                <li>Node.js to handle server-side logic and user requests</li>
+                            </ul>
+                        </li>
+                        <li><b>Additional Technologies:</b>
+                            <ul>
+                                <li><b>Redux:</b> Used for managing application state and ensuring smooth, real-time updates</li>
+                                <li><b>JWT (JSON Web Token):</b> Ensures secure user authentication</li>
+                                <li><b>Bcrypt:</b> Password hashing for secure and protected user credentials</li>
+                                <li><b>Cloudinary:</b> Integrated for storing and managing user-uploaded images</li>
+                                <li><b>Razorpay:</b> Integrated as a payment gateway for secure course purchases</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="repository-links mt-3">
+                    <h6 class="font-weight-bold">Repository Links:</h6>
+                    <ul>
+                        <li><b>Frontend Github:</b> <a href="https://github.com/yashmaurya321-crypto/LMS/tree/New-master">https://github.com/yashmaurya321-crypto/LMS/tree/New-master</a></li>
+                        <li><b>Backend Github:</b> <a href="https://github.com/yashmaurya321-crypto/LMS_BACKEND/tree/New-main">https://github.com/yashmaurya321-crypto/LMS_BACKEND/tree/New-main</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
