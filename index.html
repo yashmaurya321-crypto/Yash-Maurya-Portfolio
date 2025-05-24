@@ -1,1214 +1,926 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with JohnDoe landing page.">
-    <meta name="author" content="Devcrud">
-    <title>Yash Portfolio</title>
-    <style>
-        .portfolio-item {
-            transition: transform 0.3s ease;
-        }
-    
-        .portfolio-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        }
-    
-        .portfolio-item .card-footer {
-            background-color: transparent;
-            border-top: none;
-        }
-        .brand-img{
-            width: 135px;
-            height: 111;
-        }
-        .header-content{
-        color: black;
-        }
-        #experience {
-    background-color: #f8f9fa;
-    padding: 100px 0;
-}
-
-.timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: #f85c70;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-}
-
-.timeline-item {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-}
-
-.timeline-item::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid #f85c70;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-    transition: all 0.3s ease;
-}
-
-.timeline-item:hover::after {
-    background-color: #f85c70;
-}
-
-.left {
-    left: 0;
-}
-
-.right {
-    left: 50%;
-}
-
-.left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid #f85c70;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #f85c70;
-}
-
-.right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid #f85c70;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent #f85c70 transparent transparent;
-}
-
-.right::after {
-    left: -16px;
-}
-
-.timeline-content {
-    padding: 20px 30px;
-    background-color: white;
-    position: relative;
-    border-radius: 6px;
-    box-shadow: 0 5px 25px 0 rgba(0,0,0,.2);
-    transition: all 0.3s ease;
-}
-
-.timeline-content:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px 0 rgba(0,0,0,.2);
-}
-
-.timeline-content h1 {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #f85c70;
-    margin-bottom: 10px;
-}
-
-.timeline-content h3 {
-    font-size: 1em;
-    color: #6c757d;
-    margin-bottom: 10px;
-}
-
-.timeline-content h4 {
-    font-size: 1.1em;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.timeline-content p {
-    font-size: 0.9em;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-.experience-icon {
-    position: absolute;
-    top: -25px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #f85c70;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 1.5em;
-}
-
-.skills {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.skills li {
-    background-color: #f1f3f5;
-    color: #495057;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 0.8em;
-}
-
-@media screen and (max-width: 600px) {
-    .timeline::after {
-        left: 31px;
-    }
-    
-    .timeline-item {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
-    
-    .timeline-item::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-    }
-
-    .left::after, .right::after {
-        left: 15px;
-    }
-    
-    .right {
-        left: 0%;
-    }
-}
-        @media (max-width: 768px) {
-      .navbar-nav {
-        display: none;
-      }
-
-      .navbar-toggler {
-        display: block;
-      }
-    }
-    </style>
- 
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + JohnDoe main styles -->
-	<link rel="stylesheet" href="./assets/css/johndoe.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Yash Maurya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    
-    <header class="header">
-        <div class="container">
-            
-            <div class="header-content">
-                <h4 class="header-subtitle" >Hello, I am</h4>
-                <h1 class="header-title">Yash Maurya</h1>
-                <h6 class="header-mono" >Full Stack Developer</h6>
+<body>
+    <div class="main">
+        
+        <section>
+            <div class="hero">
+                <div class="nav">
+                    <a href="#">Yash Maurya</a>
+                    <h2 class=" js-mix-panel-trigger" data-panel="main">MENU +</h2>
+                </div>
                 
-            </div>
-        </div>
-    </header>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
-        <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#resume" class="nav-link">Resume</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav brand">
-                    <img src="assets/images/images/Yash (11).jpg" alt="" class="brand-img">
-                    <li class="brand-txt">
-                        <h5 class="brand-title">Yash Maurya</h5>
-                        <div class="brand-subtitle">Web & App Designer | Developer</div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#experience" class="nav-link">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#certificates" class="nav-link">Certificate</a>
-                    </li>
-                   
-                    <li class="nav-item last-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="container-fluid">
-        <div id="about" class="row about-section">
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-bold">Who am I ?</h3>
-                <span class="line mb-5"></span>
-                <h5 class="mb-3">A Web & App Developer</h5>
-                <p class="mt-20">I am a third-year BCA student specializing in MERN stack and React Native, focusing on full-stack web development and mobile app creation. I am passionate about technology and aspire to work as a developer in the tech industry</p>
-                <button class="btn btn-outline-danger" id="download-cv-btn"><i class="icon-down-circled2 "></i>Download My CV</button>
-            </div>
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-bold">Personal Info</h3>
-                <span class="line mb-5"></span>
-                <ul class="mt40 info list-unstyled">
-                    <li><span>Birthdate</span> : 21/09/2004</li>
-                    <li><span>Email</span> : yashmaurya2109@gmail.com</li>
-                    <li><span>Phone</span> : + (91) 7972273012</li>
-                    
-                    <li><span>Address</span> :  Rustomji Global City, Virar (W), Mumbai </li>
-                </ul>
-                <ul class="social-icons pt-3">
-
-                    <li class="social-item"><a class="social-link"   target="_blank" href="https://www.linkedin.com/in/yash-maurya-48751b226/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" target="_blank" href="https://github.com/yashmaurya321-crypto"><i class="ti-github" aria-hidden="true"></i></a></li>
-                </ul>  
-            </div>
-            
-                <div class="col-lg-4 about-card ">
-                    <h3 class="font-weight-bold">My Expertise</h3>
-                    <span class="line mb-5"></span>
-                    <div class="row">
-                        <div class="col-1 text-danger pt-1"><i class="ti-world icon-lg"></i></div>
-                        <div class="col-10 ml-auto mr-3">
-                            <h6>MERN Stack</h6>
-                            <p class="subtitle">I am Skilld MERN Stack developer.</p>
-                            <hr>
-                        </div>
-                  
-            </div>
-           
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-mobile icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>App Development</h6>
-                        <p class="subtitle">I have knowledge of React Native for app development</p>
-                        <hr>
+                <div class="heading">
+                    <h1>HELLO! I AM <span style="color: #78BEFF;">YASH</span> MAURYA</h1>
+                    <div class="blogtext">
+                        <h1 class="second-h1">FULL STACK DEVELOPER</h1>
+                        <h4>Live in Mumbai</h4>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Digital Marketing</h6>
-                        <p class="subtitle">I have Expertise in Digital Marketing</p>
-                        <hr>
+                <div class="heading-2">
+                    <h5>AVAILABLE FOR FULL TIME & FREELANCE ROLE</h5>
+                </div>
+                <!-- <div class="hero-footer">
+                    <a>MY PROJECTS <i class="ri-arrow-right-up-line"></i></a>
+                    <a>MY SKILLS <i class="ri-arrow-right-up-line"></i></a>
+                    <a>MY EXPERIENCE <i class="ri-arrow-right-up-line"></i></a>
+                </div> -->
+            </div>
+            
+        </section>
+          <div class="mix-panel mix-panel--from-right js-mix-panel-main">
+        <header class="mix-panel__header">
+           
+            <a href="#0" class="mix-panel__close js-mix-close">Close</a>
+        </header>
+
+        <div class="mix-panel__container">
+            <div class="mix-panel__content">
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#home" style="text-decoration: none;">Home</a></li>
+                        <li><a href="/#about" style="text-decoration: none; color: #fff;">About</a></li>
+                        <li><a href="#skills" style="text-decoration: none;">Skills</a></li>
+                        <li><a href="#experience" style="text-decoration: none;">Experience</a></li>
+                        <li><a href="#projects" style="text-decoration: none;">Projects</a></li>
+                        <li><a href="#contact" style="text-decoration: none;">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="contact-section">
+                                       
+                    <div class="social-links">
+                        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+           <section class="about-section" id="about">
+            <div class="floating-elements">
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+            </div>
+            
+            <div class="about-container">
+                <div class="about-content">
+                    <div class="about-label">ABOUT ME</div>
+                    <h2 class="about-title">Passionate Developer<br>Creating Digital<br><span style="color: #78BEFF;">Experiences</span></h2>
+                    <p class="about-description">
+                        I'm a dedicated full-stack developer with a passion for creating innovative digital solutions. 
+                        With expertise in modern web technologies, I transform complex ideas into user-friendly applications 
+                        that deliver exceptional experiences and drive business growth.
+                    </p>
+                    
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">85%</span>
+                            <span class="stat-label">12th Bords</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">12+</span>
+                            <span class="stat-label">Month Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Certificates</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Advanced Projects</span>
+                        </div>
+                    </div>
 
-    <!--Resume Section-->
-<section class="section" id="resume">
-    <div class="container">
-        <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
-        <div class="row">
-            <div class="col-md-6 col-lg-4">
-                <div class="card hovereffect">
-                   <div class="card-header">
-                        <div class="mt-2">
-                            <h4><b>Expertise</b></h4>
-                            <span class="line"></span>  
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <h6 class="title text-danger"> Present</h6>
-                        <P>Full Stack Developer</P>
-                        <P class="subtitle">Expert in MERN Stack (React.js, Node.js, MongoDB, Express.js), React Native, Redux, REST API, and some knowledge in Digital Marketing.</P>
+                    
+
+                   <a href="Yash CV.pdf" class="download-btn" download>
+    Download CV <i class="ri-download-line"></i>
+</a>
+
+                </div>
+                
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="Yash.jpg" alt="Yash Maurya" class="profile-image">
+                        <div class="image-overlay"></div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card hovereffect">
-                   <div class="card-header">
-                        <div class="mt-2">
-                            <h4><b>Education</b></h4>
-                            <span class="line"></span>  
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <h6 class="title text-danger">2023 - 2024</h6>
-                        <P>SYBCA</P>
-                        <P class="subtitle">Tilak Maharashtra Vidyapith, Pune University, 83%</P>
-                        <hr>
-                        <h6 class="title text-danger">2021 - 2023</h6>
-                        <P>FYBCA</P>
-                        <P class="subtitle">Tilak Maharashtra Vidyapith, Pune University, 71%</P>
-                        <hr>
-                        <h6 class="title text-danger">2020 - 2021</h6>
-                        <P>SYJC</P>
-                        <P class="subtitle">Expert College, Mumbai University, 85%</P>
-                        <hr>
-                        <h6 class="title text-danger">2016 - 2018</h6>
-                        <P>SSC</P>
-                        <P class="subtitle">Expert International High School, Mumbai University, 71.40%</P>
-                    </div>
+        </section>
+
+       <section class="skills" id="skills">
+        <h3 class="skills-title">My <span>Skills</span></h3>
+        
+        <div class="skills-container">
+            <!-- Floating particles -->
+            <div class="floating-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+
+            <!-- Orbits -->
+            <div class="skills-orbit orbit-1">
+                <!-- Inner orbit skills -->
+                <div class="skill-item" data-orbit="1">
+                    <i class="ri-reactjs-line skill-icon"></i>
+                    <span class="skill-name">React</span>
+                </div>
+                <div class="skill-item" data-orbit="1">
+                    <i class="ri-nodejs-line skill-icon"></i>
+                    <span class="skill-name">Node.js</span>
+                </div>
+                <div class="skill-item" data-orbit="1">
+                    <i class="ri-database-2-line skill-icon"></i>
+                    <span class="skill-name">MongoDB</span>
+                </div>
+                <div class="skill-item" data-orbit="1">
+                    <i class="ri-smartphone-line skill-icon"></i>
+                    <span class="skill-name">React Native</span>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="card hovereffect">
-                   <div class="card-header">
-                        <div class="pull-left">
-                            <h4 class="mt-2"><b>Skills</b></h4>
-                            <span class="line"></span>  
+
+            <div class="skills-orbit orbit-2">
+                <!-- Middle orbit skills -->
+                <div class="skill-item" data-orbit="2">
+                    <i class="ri-javascript-line skill-icon"></i>
+                    <span class="skill-name">Express.js</span>
+                </div>
+                <div class="skill-item" data-orbit="2">
+                    <i class="ri-shield-keyhole-line skill-icon"></i>
+                    <span class="skill-name">JWT</span>
+                </div>
+                <div class="skill-item" data-orbit="2">
+                    <i class="ri-cloud-line skill-icon"></i>
+                    <span class="skill-name">Microservice</span>
+                </div>
+                <div class="skill-item" data-orbit="2">
+                    <i class="ri-code-s-slash-line skill-icon"></i>
+                    <span class="skill-name">DSA</span>
+                </div>
+                <div class="skill-item" data-orbit="2">
+                    <i class="ri-cup-line skill-icon"></i>
+                    <span class="skill-name">Java</span>
+                </div>
+                <div class="skill-item" data-orbit="2">
+                    <i class="ri-file-code-line skill-icon"></i>
+                    <span class="skill-name">Python</span>
+                </div>
+            </div>
+
+            <div class="skills-orbit orbit-3">
+                <!-- Outer orbit skills -->
+                <div class="skill-item" data-orbit="3">
+                    <i class="ri-coins-line skill-icon"></i>
+                    <span class="skill-name">Solidity</span>
+                </div>
+                <div class="skill-item" data-orbit="3">
+                    <i class="ri-wallet-3-line skill-icon"></i>
+                    <span class="skill-name">MetaMask</span>
+                </div>
+                <div class="skill-item" data-orbit="3">
+                    <i class="ri-advertisement-line skill-icon"></i>
+                    <span class="skill-name">Meta Ads</span>
+                </div>
+                <div class="skill-item" data-orbit="3">
+                    <i class="ri-git-branch-line skill-icon"></i>
+                    <span class="skill-name">Git</span>
+                </div>
+                <div class="skill-item" data-orbit="3">
+                    <i class="ri-html5-line skill-icon"></i>
+                    <span class="skill-name">HTML5</span>
+                </div>
+                <div class="skill-item" data-orbit="3">
+                    <i class="ri-css3-line skill-icon"></i>
+                    <span class="skill-name">CSS3</span>
+                </div>
+                <div class="skill-item" data-orbit="3">
+                    <i class="ri-server-line skill-icon"></i>
+                    <span class="skill-name">API</span>
+                </div>
+                <div class="skill-item" data-orbit="3">
+                    <i class="ri-terminal-box-line skill-icon"></i>
+                    <span class="skill-name">CLI</span>
+                </div>
+            </div>
+
+            <!-- Center skill -->
+            <div class="center-skill">
+                <i class="ri-code-box-line skill-icon"></i>
+                <span class="skill-name">Full Stack</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="experience-section" id="experience">
+        <div class="container">
+           <h3 class="skills-title" style="color: white;">My <span>Experience</span></h3>
+            
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                
+                <!-- Experience Item 1 -->
+                <div class="experience-item left">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <span class="date">June 2024 - September 2024</span>
+                            <h2 class="role">MNNLR</h2>
                         </div>
-                    </div>
-                    <div class="card-body pb-2">
-                     <h6 class="title text-danger">Programming Languages</h6>
-                        <p>JavaScript, HTML, CSS, Java(Basic)</p>
-                        <div class="progress mb-3">
-                            <div class="progress-bar background-color-black" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <hr>
-                        <h6 class="title text-danger">App Development</h6>
-                        <p class="subtitle">React Native, Redux, REST API</p>
-                        <div class="progress mb-3">
-                            <div class="progress-bar " role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <hr>
-                        <h6 class="title text-danger">Web Development</h6>
-                        <p class="subtitle">MERN Stack (React.js, Node.js, MongoDB, Express.js), Redux, REST API</p>
-                        <div class="progress mb-3">
-                            <div class="progress-bar " role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <hr>
-                        <h6 class="title text-danger">Databases</h6>
-                        <p class="subtitle">MongoDB, MySQL</p>
-                        <div class="progress mb-3">
-                            <div class="progress-bar " role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <hr>
-                        <h6 class="title text-danger">Other Skills</h6>
-                        <p class="subtitle">Data Structures and Algorithms (DSA), Git, GitHub, Socket.IO, JWT, API</p>
-                        <div class="progress mb-3">
-                            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                        </p>
+                        <div class="">
+                            <span class="" style="color: #78BEFF;  background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">React Native</span>
+                            <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">Express JS</span>
+                            <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">MongoDB</span>
+                            <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">Figma</span>
+                            <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">Reactjs</span>                            
                         </div>
                         
                     </div>
+                    <div class="timeline-dot"></div>
                 </div>
-                <div class="card hovereffect">
-                   <div class="card-header">
-                        <div class="pull-left">
-                            <h4 class="mt-2 font-weight-bold">Languages</h4>
-                            <span class="line"></span>  
+
+                <!-- Experience Item 2 -->
+              
+                <div class="experience-item right">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <span class="date">September 2024 - November 2024</span>
+                            <h2 class="role">Geneus Solution</h2>
+                        </div>
+                        <p class="description">
+                            Built end-to-end web applications with focus on performance and scalability. Implemented RESTful APIs and database optimization strategies.
+                        </p>
+                        <div class="tech-stack">
+                             <span class="" style="color: #78BEFF;  background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">React Native</span>
+                            <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">Express JS</span>
+                            <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">MongoDB</span>
+                            <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">Figma</span>
+                            <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">Reactjs</span>    
+                        </div>
+                        <div class="project-links">
+                          
                         </div>
                     </div>
-                    <div class="card-body pb-2">
-                       <h6>English</h6>
-                        <div class="progress mb-3">
-                            <div class="progress-bar " role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <h6>Hindi</h6>
-                        <div class="progress mb-3">
-                            <div class="progress-bar " role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
+                    <div class="timeline-dot"></div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-    <section class="section bg-dark text-center">
+    </section>
+
+
+<section class="projects-section" id="projects">
+        <div class="floating-elements">
+            <div class="floating-dot" style="top: 10%; left: 20%; animation-delay: 0s;"></div>
+            <div class="floating-dot" style="top: 20%; right: 15%; animation-delay: 2s;"></div>
+            <div class="floating-dot" style="bottom: 30%; left: 10%; animation-delay: 4s;"></div>
+            <div class="floating-dot" style="bottom: 10%; right: 25%; animation-delay: 1s;"></div>
+        </div>
+
         <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6 col-lg-3">
-                    <div class="row ">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-medall icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">4</h1>
-                            <p class="text-light mb-1">Certificates</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">5</h1>
-                            <p class="text-light mb-1">Personal Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-bookmark-alt icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">85%</h1>
-                            <p class="text-light mb-1">12th</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-bookmark-alt icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">83%</h1>
-                            <p class="text-light mb-1">BCA 2nd Year</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="service">
-        <div class="container">
-            <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Services</h2>
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
-                    <div class="card hovereffect mb-5">
-                        <div class="col-1 text-danger pt-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16"><path fill="#f85c70" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539a7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539a7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"/></svg>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark font-weight-bold">Web Development</h5>
-                            <P class="subtitle">Experience the difference with my comprehensive MERN stack development service. I am specialize in MongoDB, Express.js, React.js, and Node.js, offering end-to-end solutions tailored to your unique needs. From crafting engaging user interfaces to building robust back-end systems, I will ensure your web projects stand out in today's competitive digital landscape. Hire me to transform your ideas into exceptional online experiences..</P>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5 hovereffect">
-                        <div class="col-1 text-danger pt-1"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16"><path fill="#f85c70" d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm6 11a1 1 0 1 0-2 0a1 1 0 0 0 2 0"/></svg></i></div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark font-weight-bold">App Development</h5>
-                            <P class="subtitle">Transform your app ideas into reality with my specialized development service using React Native and Firebase. I will combine the efficiency of React Native with the power of Firebase's real-time database and authentication services to deliver high-performance, feature-rich mobile applications. Hire me or collaborate to create innovative solutions that drive success in today's competitive app market.</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5 hovereffect">
-                        <div class="col-1 text-danger pt-1"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16"><path fill="#f85c70" fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/></svg></i></div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark font-weight-bold">Digital Marketing</h5>
-                            <P class="subtitle">Discover the full potential of your online presence with my customized digital marketing services. From strategic planning to execution, I will leverage the latest tools and techniques to enhance your brand visibility, engage your audience, and drive conversions. Let's amplify your digital footprint together.</P>
-                        </div>
-                    </div>
-                </div>
-               
-        </div>
-    </section>
-
-    
-    <section class="section bg-dark py-5">
-        <div class="container text-center">
-            <h2 class="text-light mb-5 font-weight-normal">I Am Available For Job</h2>
-            <button class="btn bg-primary w-lg" ><a style = "text-decoration: none;color: aliceblue;"href="#contact">Hire me</a></button>
-        </div>
-    </section>
-
-
-    <!-- Experience Section -->
-
-    <section class="section" id="experience">
-        <div class="container">
-            <h2 class="mb-5"><span class="text-danger">My</span> Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item left wow fadeInLeft">
-                    <div class="timeline-content">
-                        <div class="experience-icon">
-                            <i class="ti-desktop"></i>
-                        </div>
-                        <h3 class="date">June 2024 - September 2024</h3>
-                        <h1>React Native Developer Intern</h1>
-                        <h4>MNNLR</h4>
-                        <p>Developed and maintained website and applications using the MERN stack and React Native. Collaborated with senior developers on various projects and improved site performance by 25%.</p>
-                        <ul class="skills">
-                            <li>React</li>
-                            <li>Node.js</li>
-                            <li>MongoDB</li>
-                            <li>React Native</li>
-                            <li>Figma</li>
-                            <li>Redux</li>
-                            <li>API Integration</li>
-                        </ul>
-                    </div>
-                </div>
-    
-             
-                <div class="timeline-item right wow fadeInRight">
-                    <div class="timeline-content">
-                        <div class="experience-icon">
-                            <i class="ti-mobile"></i>
-                        </div>
-                        <h3 class="date">September 2024 - November 2024</h3>
-                        <h1>Android Developer Intern</h1>
-                        <h4>Geneus Solutions</h4>
-                        <p>Working on Full Stack App Development from Froentend to backend to Deployment </p>
-                        <ul class="skills">
-                            <li>MongoDB</li>
-                            <li>Express.js</li>
-                            <li>React Native</li>
-                            <li>Node.js</li>
-                            <li>Redux</li>
-                            <li>Figma</li>
-                            <li>API Integration</li>
-                            <li>Digital Marketing</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-<!-- Portfolio Section -->
-<!-- Portfolio Section -->
-<section id="portfolio" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-5">My Projects</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 portfolio-item">
-                    <img src="assets/imgs/1 (2).png" class="card-img-top" alt="Chat App" data-toggle="modal" data-target="#chatModal">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Chat App</h5>
-                        <p class="card-text">A chat application with messaging.</p>
-                    </div>
-                    <div class="card-footer text-muted d-flex justify-content-between align-items-center">
-                        <span>MERN Stack</span>
-                        <a href="#" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#chatModal">View Details</a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 portfolio-item">
-                    <img src="assets/images/396shots_so.png" class="card-img-top" alt="E-commerce App" data-toggle="modal" data-target="#attendanceModal">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Attendence</h5>
-                        <p class="card-text">A mobile app for Managing attendence</p>
-                    </div>
-                    <div class="card-footer text-muted d-flex justify-content-between align-items-center">
-                        <span>React Native</span>
-                        <a href="#" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#attendanceModal">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 portfolio-item">
-                    <img src="assets/imgs/2 (1).png" class="card-img-top" alt="E-commerce App" data-toggle="modal" data-target="#ecommerceModal">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">E-commerce Website</h5>
-                        <p class="card-text">A Website for buying and selling products online with secure payment integration.</p>
-                    </div>
-                    <div class="card-footer text-muted d-flex justify-content-between align-items-center">
-                        <span>React Native</span>
-                        <a href="#" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#ecommerceModal">View Details</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 portfolio-item">
-                    <img src="assets/images/Course.jpeg" class="card-img-top" alt="LMS System" data-toggle="modal" data-target="#LmsModal">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">LMS System</h5>
-                        <p class="card-text">A Website where students can buy and access Course.</p>
-                    </div>
-                    <div class="card-footer text-muted d-flex justify-content-between align-items-center">
-                        <span>MERN Stack</span>
-                        <a href="#" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#LmsModal">View Details</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 portfolio-item">
-                    <img src="assets/images/Doctor-booking.png" class="card-img-top" alt="Doctor Booking App" data-toggle="modal" data-target="#doctorBookingModal">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Doctor Appointment App</h5>
-                        <p class="card-text">A App where person can appoint Doctor according to theri concern</p>
-                    </div>
-                    <div class="card-footer text-muted d-flex justify-content-between align-items-center">
-                        <span>React Native</span>
-                        <a href="#" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#doctorBookingModal">View Details</a>
-                    </div>
-                </div>
-            </div>
-           
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 portfolio-item">
-                    <img src="assets/imgs/3 (4).png" class="card-img-top" alt="Blog App" data-toggle="modal" data-target="#blogModal">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Blog App</h5>
-                        <p class="card-text">A full-featured blogging platform built with the MERN stack and SEO optimization.</p>
-                    </div>
-                    <div class="card-footer text-muted d-flex justify-content-between align-items-center">
-                        <span>MERN Stack</span>
-                        <a href="#" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#blogModal">View Details</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Modals -->
-<div class="modal fade" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="chatModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title font-weight-bold" id="chatModalLabel">Chat App</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <img src="assets/imgs/1 (2).png" class="img-fluid mb-3" alt="Chat App">
-                <p>This project is a practice project for a chat application using Socket.IO, where users can find each other, send connection requests, and exchange messages.</p>
-                <p><b>Key features:</b></p>
-                <ul>
-                            
-                    <li><b>Registration :  </b>User registration and login</li>
-                    <li><b>Connect :</b>Sending connection requests</li>
-                    <li><b>Message :</b>Sending and receiving messages in real-time</li>
-                    <li><b>Localstorage :</b>Local storage for user data persistence</li>
-                   
-                </ul>
-                <p><b>Technologies Used:</b></p>
-                <ul>
-                    <li><b>Backend:</b> Node.js, Express.js, MongoDB, Socket.IO</li>
-                    <li><b>Frontend:</b> React.js, React Router, Axios, Socket.IO Client</li>
-                   
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="doctorBookingModal" tabindex="-1" role="dialog" aria-labelledby="doctorBookingModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title font-weight-bold" id="doctorBookingModalLabel">Doctor Booking App</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <img src="assets/images/Doctor-booking.png" class="img-fluid mb-3" alt="Doctor Booking App">
-                <p>
-                    A mobile application built using React Native and Expo that allows users to book doctor appointments based on their medical concerns. The app focuses on providing a seamless booking experience with state management handled through Redux.
+            <div class="section-header">
+                <div class="section-tag">Portfolio</div>
+                 <h3 class="skills-title" style="color: white;">My <span>Projects</span></h3>
+                <p class="section-subtitle">
+                    A collection of my latest work showcasing modern web development, 
+                    innovative solutions, and creative problem-solving.
                 </p>
+            </div>
 
-                <div class="features-section mb-4">
-                    <h6 class="font-weight-bold">Key Features:</h6>
-                    <ul>
-                        <li><b>Doctor Search:</b> Users can search for doctors based on:
-                            <ul>
-                                <li>Medical specialties (Cardiologist, Pediatrician, etc.)</li>
-                                <li>Common health concerns</li>
-                                <li>Doctor ratings and reviews</li>
-                            </ul>
-                        </li>
-                        <li><b>Appointment Booking:</b>
-                            <ul>
-                                <li>View doctor availability in real-time</li>
-                                <li>Select preferred time slots</li>
-                                <li>Book instant appointments</li>
-                                <li>Receive booking confirmations</li>
-                            </ul>
-                        </li>
+            <div class="projects-grid">
+                <!-- Project 1: AI Budget Tracker -->
+                <div class="project-card" data-project="1">
+                    <div class="project-image">
+                        <img src="AI-BUDJET.png" style="width: 100%;"/>
+                    </div>
+                    <div class="project-category">Personal Finance</div>
+                    <h3 class="project-title">AI Budget Tracker</h3>
+                    <p class="project-description">
+                        Smart budget management app with AI-powered expense categorization, 
+                        real-time analytics, and predictive spending insights.
+                    </p>
+                    <div class="project-tech">
+                         <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">React Native</span>
+                         <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">Node.js</span>
+                         <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">Gemeni AI api</span>
+                         <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">MongoDB</span>
+                    </div>
+                    <div class="project-links">                      
+                        <a href="#" class="project-link">Source Code</a>
+                    </div>
+                </div>
+
+                <!-- Project 2: E-Commerce Platform -->
+                <div class="project-card" data-project="2">
+                    <div class="project-image">
+                        <img src="Croudfunding.png"style="width: 100%;"/>
+                    </div>
+                    <div class="project-category">Blockchain Webapp</div>
+                    <h3 class="project-title">Decentralized CrowdFunding Application</h3>
+                    <p class="project-description">
+                        Built a Decentralized CrowdFunding DApp using React.js, Solidity, Hardhat, and MetaMask – users can contribute ETH to campaigns, while only the contract owner can create new ones, ensuring trust and decentralization.
+                    </p>
+                    <div class="project-tech">
+                        <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">Solidity</span>
+                        <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">Hardhat</span>
+                        <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">React</span>
+                        <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">Etherjs</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Source Code</a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Task Management App -->
+                <div class="project-card" data-project="3">
+                    <div class="project-image">
+                        <img src="yashtoken.png"style="width: 100%;"/>
+                    </div>
+                    <div class="project-category">Blockchain Custom Token</div>
+                    <h3 class="project-title">YashToken Dashboard</h3>
+                    <p class="project-description">
+                       Excited to launch YashToken Dashboard – a React.js + ethers.js v6 app for managing ERC-20 tokens with features like wallet connection, live balances, holder tracking, and secure transfers.
+                    </p>
+                    <div class="project-tech">
+                         <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">React</span>
+                         <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">Hardhat</span>
+                         <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">Solidity</span>
+                         <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">Etherjs</span>
+                         <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">ERC-20</span>
+                    </div>
+                    <div class="project-links">
                        
-                        <li><b>Doctor Profiles:</b>
-                            <ul>
-                                <li>Detailed doctor information</li>
-                                <li>Educational background</li>
-                                <li>Patient reviews and ratings</li>
-                                <li>Available time slots</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="tech-stack bg-light p-3 rounded mb-4">
-                    <h6 class="font-weight-bold">Technology Stack:</h6>
-                    <ul>
-                        <li><b>Frontend:</b>
-                            <ul>
-                                <li>React Native with Expo framework</li>
-                                <li>Redux for state management</li>
-                                <li>React Navigation for screen management</li>
-                               
-                            </ul>
-                        </li>
-                        <li><b>UI/UX Features:</b>
-                            <ul>
-                                <li>Custom animations and transitions</li>
-                                <li>Responsive layouts</li>
-                                <li>Cross-platform compatibility</li>
-                                <li>Offline data persistence</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="implementation-details mb-4">
-                    <h6 class="font-weight-bold">Implementation Details:</h6>
-                    <ul>
-                        <li><b>State Management:</b>
-                            <ul>
-                                <li>Redux store for managing appointment data</li>
-                                <li>Redux persist for local storage</li>
-                                <li>Action creators for booking operations</li>
-                            </ul>
-                        </li>
-                        <li><b>Navigation:</b>
-                            <ul>
-                                <li>Stack navigation for main flows</li>
-                                <li>Tab navigation for main sections</li>
-                                <li>Modal navigation for booking process</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="links">
-                    <h6 class="font-weight-bold">App Link:</h6>
-                    <p>Download the app from: <a href="https://drive.google.com/file/d/1CI8L0O3s5iz45hbJHU0S8dzDRu8M5riW/view?usp=drive_link">App Link</a></p>
-                    <small class="text-muted">Note: This is a frontend-only implementation. Backend services were not implemented in this version.</small>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="ecommerceModal" tabindex="-1" role="dialog" aria-labelledby="ecommerceModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title font-weight-bold" id="ecommerceModalLabel">E-commerce App</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <img src="assets/imgs/2 (1).png" class="img-fluid mb-3" alt="E-commerce App">
-                <p>
-                    Welcome to our MERN E-Commerce App! This is a simple yet powerful web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). Our platform offers a seamless shopping experience with a focus on watches.</p>
-                    <p><b>Key features:</b></p>
-                <ul>
-                    <li><b>Product Categories:</b>Explore our curated selection of Men's and Women's watches.</li>
-                    <li><b>Interactive UI: </b> Enjoy animations and effects on components and cards for a visually appealing experience.</li>
-                    <li><b>Bootstrap for Frontend:</b>I've used Bootstrap for styling and layout on the frontend, ensuring a responsive design.</li>
-                    <li><b>React.js: </b> The frontend is built using React.js, providing a dynamic and user-friendly interface.</li>
-                    <li><b>Node.js and Express.js:</b> Our backend is powered by Node.js and Express.js, offering robust server-side functionalities.</li>
-                    <li><b>MongoDB:</b>We utilize MongoDB as our database to store product information and user data securely.</li>
-                    <li><b>Authentication:</b>User registration and login are secured with bcrypt.js for password hashing.</li>
-                    <li><b>Redux:</b>Manage application state efficiently with Redux, including the add to cart functionality.</li>
-                </ul>
-                <h6><b>Technology Stack : </b></h6>
-                <ul>
-                <li><b>Frontend:</b>React.js, Bootstrap</li>
-                    <li><b>Backend:</b> Node.js, Express.js</li>
-                    <li><b>Database:</b> MongoDB</li>
-                
-
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="LmsModal" tabindex="-1" role="dialog" aria-labelledby="lmsModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title font-weight-bold" id="lmsModalLabel">Learning Management System</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <img src="assets/images/Course.jpeg" class="img-fluid mb-3" alt="LMS Platform">
-                
-                <div class="features-section mb-4">
-                    <h6 class="font-weight-bold">Key Features:</h6>
-                    
-                    <div class="user-features mb-3">
-                        <h6 class="text-primary">For Users:</h6>
-                        <ul>
-                            <li><b>Sign-Up/Login Required:</b> Users must log in to access the platform, purchase courses, and access their personalized dashboards</li>
-                            <li><b>Search and Purchase Courses:</b> After logging in, users can easily search, filter, and purchase courses in their area of interest</li>
-                            <li><b>Student Dashboard:</b> Once enrolled, students can track their course progress, interact with content, and manage their learning</li>
-                            <li><b>Image Upload:</b> Students can upload images, such as profile pictures or course-related media, enhancing their experience. Images are securely stored using Cloudinary</li>
-                        </ul>
-                    </div>
-
-                    <div class="admin-features mb-3">
-                        <h6 class="text-primary">For Admins:</h6>
-                        <ul>
-                            <li><b>Admin Dashboard:</b> Admins can log in to a dedicated dashboard to create and manage courses, view course details, and monitor user activity</li>
-                            <li><b>Course Management:</b> Admins can create new courses, edit existing ones, and ensure they meet the needs of learners</li>
-                            <li><b>Access User Info:</b> Admins can view key user data, such as the number of users, names, emails, and other metrics for analysis</li>
-                        </ul>
+                        <a href="#" class="project-link">GitHub</a>
                     </div>
                 </div>
 
-                <div class="technology-stack bg-light p-3 rounded">
-                    <h6 class="font-weight-bold">Technology Stack:</h6>
-                    <ul>
-                        <li><b>MERN Stack:</b>
-                            <ul>
-                                <li>MongoDB for flexible, document-based data storage</li>
-                                <li>Express.js to build powerful backend services</li>
-                                <li>React.js for creating dynamic and responsive user interfaces</li>
-                                <li>Node.js to handle server-side logic and user requests</li>
-                            </ul>
-                        </li>
-                        <li><b>Additional Technologies:</b>
-                            <ul>
-                                <li><b>Redux:</b> Used for managing application state and ensuring smooth, real-time updates</li>
-                                <li><b>JWT (JSON Web Token):</b> Ensures secure user authentication</li>
-                                <li><b>Bcrypt:</b> Password hashing for secure and protected user credentials</li>
-                                <li><b>Cloudinary:</b> Integrated for storing and managing user-uploaded images</li>
-                                <li><b>Razorpay:</b> Integrated as a payment gateway for secure course purchases</li>
-                            </ul>
-                        </li>
-                    </ul>
+                <!-- Project 4: Weather Dashboard -->
+                <div class="project-card" data-project="4">
+                    <div class="project-image">
+                        <img src="LMS.png"style="width: 100%;"/>
+                    </div>
+                    <div class="project-category">Course Webapp</div>
+                    <h3 class="project-title">LMS SYSTEM</h3>
+                    <p class="project-description">
+                        Launched a full-featured LMS using the MERN stack, where users can sign up, purchase courses, track progress, and upload images, while admins manage courses, monitor users, and handle content via a dedicated dashboard.
+                    </p>
+                    <div class="">
+                         <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">React</span>
+                         <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">Expressjs</span>
+                         <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">Mongodb</span>
+                         <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">Razorpay</span>
+                         <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">JWT</span>
+                    </div>
+                    <div class="project-links">
+                       
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
                 </div>
 
-                <div class="repository-links mt-3">
-                    <h6 class="font-weight-bold">Repository Links:</h6>
-                    <ul>
-                        <li><b>Frontend Github:</b> <a href="https://github.com/yashmaurya321-crypto/LMS/tree/New-master">https://github.com/yashmaurya321-crypto/LMS/tree/New-master</a></li>
-                        <li><b>Backend Github:</b> <a href="https://github.com/yashmaurya321-crypto/LMS_BACKEND/tree/New-main">https://github.com/yashmaurya321-crypto/LMS_BACKEND/tree/New-main</a></li>
-                    </ul>
+                <!-- Project 5: Portfolio Website -->
+                <div class="project-card" data-project="5">
+                    <div class="project-image">
+                         <img src="blodapp.png"style="width: 100%;"/>
+                    </div>
+                    <div class="project-category">Blog App</div>
+                    <h3 class="project-title">Blog App</h3>
+                    <p class="project-description">
+                       Created a full-featured Blog App using the MERN stack with JWT auth, category-based sorting, likes, comments, search, and a user dashboard — all styled with responsive Bootstrap UI.
+                    </p>
+                    <div class="project-tech">
+                         <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">React</span>
+     <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">Nodejs</span>
+     <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">Expressjs</span>
+     <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">Mongodb</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link primary">View Site</a>
+                        <a href="#" class="project-link">Process</a>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="attendanceModal" tabindex="-1" role="dialog" aria-labelledby="attendanceModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title font-weight-bold" id="attendanceModalLabel">Attendance App</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <img src="assets/images/396shots_so.png" class="img-fluid mb-3" alt="Attendance App">
-                <p>This app allows users to track and manage attendance, keeping accurate records for schools, companies, and other organizations.</p>
-                <p><b>Key features:</b></p>
-                <ul>
-                   
-                    <li><b>Attendance Tracking:</b> Record daily attendance with timestamps</li>
-                    <li><b>Creation of new Employee:</b> Can create new employee with unique ID</li>
-                    <li><b>History of Attendance:</b> Attendence History of Perticular Employee</li>
-                </ul>
-                <p><b>Technologies Used:</b></p>
-                <ul>
-                    
-                    <li><b>Frontend:</b> React Native, Local Storage</li>
-                    
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-   
-<div class="modal fade" id="blogModal" tabindex="-1" role="dialog" aria-labelledby="blogModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title font-weight-bold" id="blogModalLabel">Blog App</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <img src="assets/imgs/3 (4).png" class="img-fluid mb-3" alt="Blog App">
-                <p>The Blog App is a platform where users can write, publish, and share their blogs with others. It features user authentication using JWT, registration and login pages, a home page displaying blogs, a comment section, and the ability to like and follow favorite writers. The app is built with the MERN stack (MongoDB, Express, React, Node.js) and styled with Bootstrap to ensure responsiveness.</p>
-                <h6><b>Key features:</b></h6>
-                <ul>
-                    <li><b>User Authentication: </b>Secure JWT authentication for registration and login.</li>
-                    <li><b>Home Page: </b>Displays blogs sorted by category and popularity (likes).</li>
-                    <li><b>Write and Publish Blogs:</b>Users can create and publish their own blogs.</li>
-                    <li><b>Comment and Like: </b>Users can comment on and like blogs. </li>
-                    <li><b>Follow Writers:</b>Users can follow their favorite writers.</li>
-                    <li><b>Search Blogs: </b>Search functionality to find blogs by keywords.</li>
-                    <li><b>User Dashboard: </b>Dashboard to view the number of blogs written by the user and the total likes received.</li>
-                    <li><b>Responsive Design:</b>User-friendly design with Bootstrap for responsiveness.</li>
-                </ul>
-                <h6><b>Technology Stack : </b></h6>
-                <ul>
-                <li><b>Frontend:</b>React.js, Bootstrap</li>
-                    <li><b>Backend:</b> Node.js, Express.js</li>
-                    <li><b>Database:</b> MongoDB</li>
-                    <li><b>Authentication:</b> JSON Web Token (JWT)</li>
 
-                </ul>
+                <!-- Project 6: Mobile App -->
+                <div class="project-card" data-project="6">
+                    <div class="project-image">
+                        <img src="Doctor-booking.png"style="width: 100%;"/>
+                    </div>
+                    <div class="project-category">Mobile Development</div>
+                    <h3 class="project-title">Doctor Booking App</h3>
+                    <p class="project-description">
+                        Made Doctor booking app using React Native solely focused on design part usng and have used redux for state management
+                    </p>
+                    <div class="project-tech">
+                       <span class=""style="color: #78BEFF; background: #222;
+    color: #78BEFF;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    transition: all 0.3s ease;">React Native</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link primary">Download</a>
+                        <a href="#" class="project-link">Features</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
 
+   <section class="contact-section" id="contact">
+        <div class="contact-bg-elements">
+            <div class="bg-gradient"></div>
+            <div class="bg-gradient"></div>
+        </div>
 
-<section class="section" id="certificates">
-    <div class="container">
-        <h2 class="text-center mb-5">My Certificates</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 portfolio-item">
-                    <img src="assets/images/javascript_basic-certificate/javascript_basic certificate_page-0001.jpg" class="card-img-top" alt="Chat App" data-toggle="modal" data-target="#chatModal">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">Javascript-certificate</h5>
-                        <p class="card-text">By HackerRank</p>
-                    </div>
-                    <div class="card-footer text-muted d-flex justify-content-between align-items-center">
-                        <span>Javascript</span>
-                        <a href="#" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#javascript">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 portfolio-item">
-                    <img src="assets/images/MERN/MERN_page-0001.jpg" class="card-img-top" alt="Chat App" data-toggle="modal" data-target="#chatModal">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">MERN STACK Certificate</h5>
-                        <p class="card-text">By SkillUp</p>
-                    </div>
-                    <div class="card-footer text-muted d-flex justify-content-between align-items-center">
-                        <span>MERN Stack</span>
-                        <a href="#" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#MERN">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 portfolio-item">
-                    <img src="assets/images/react_basic-certificate/react_basic certificate_page-0001.jpg" class="card-img-top" alt="Chat App" data-toggle="modal" data-target="#chatModal">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">React Certificate </h5>
-                        <p class="card-text">By HackerRank</p>
-                    </div>
-                    <div class="card-footer text-muted d-flex justify-content-between align-items-center">
-                        <span>React</span>
-                        <a href="#" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#React">View Details</a>
-                    </div>
-                </div>
-            </div>
-    </div>
-    <div class="col-md-4 mb-4">
-        <div class="card h-100 portfolio-item">
-            <img src="assets/images/images/Geneus_Soluti/Internship.jpg" class="card-img-top" alt="Chat App" data-toggle="modal" data-target="#chatModal">
-            <div class="card-body">
-                <h5 class="card-title font-weight-bold">Internship Certificate</h5>
-                <p class="card-text">By Geneus Solution</p>
-            </div>
-            <div class="card-footer text-muted d-flex justify-content-between align-items-center">
-                <span>Full Stack</span>
-                <a href="#" class="btn btn-sm btn-outline-primary" data-toggle="modal" data-target="#Geneus">View Details</a>
-            </div>
-        </div>
-    </div>
-</div>
-    <div class="modal fade" id="javascript" tabindex="-1" role="dialog" aria-labelledby="chatModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title font-weight-bold" id="chatModalLabel">Javascript Certificate</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img src="assets/images/javascript_basic-certificate/javascript_basic certificate_page-0001.jpg" class="img-fluid mb-3" alt="Chat App">
-                    <p>I've successfully completed my JavaScript certification on HackerRank, adding to my expertise in the MERN (MongoDB, Express.js, React, Node.js) stack!. Now, armed with practical knowledge and a new certification, I'm ready to tackle advanced challenges and push my skills further. </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="MERN" tabindex="-1" role="dialog" aria-labelledby="chatModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="chatModalLabel">MERN Stack Certificate</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img src="assets/images/MERN/MERN_page-0001.jpg" class="img-fluid mb-3" alt="Chat App">
-                    
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="Geneus" tabindex="-1" role="dialog" aria-labelledby="chatModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="chatModalLabel">MERN Stack Certificate</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img src="assets/images/images/Geneus_Soluti/Internship.jpg" class="img-fluid mb-3" alt="Chat App">
-                    
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="React" tabindex="-1" role="dialog" aria-labelledby="chatModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="chatModalLabel">React Certificate</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img src="assets/images/react_basic-certificate/react_basic certificate_page-0001.jpg" class="img-fluid mb-3" alt="Chat App">
-                    <p> I've successfully completed my Frontend Developer (React) certification on HackerRank, adding to my expertise in the MERN (MongoDB, Express.js, React, Node.js) stack! 🚀 Now, armed with practical knowledge and a new certification, I'm ready to tackle advanced challenges and push my skills further. </p>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-    <div class="section contact" id="contact">
-        <div id="map" class="map"></div>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="contact-form-card">
-                        <h4 class="contact-title">Send a message</h4>
-                        <form action="">
+            <div class="contact-header">
+                <div class="contact-tag">Get In Touch</div>
+               <h3 class="skills-title" style="color: white;"><span>Lets Work Together</span></h3>
+                <p class="contact-subtitle">
+                    Ready to bring your ideas to life? I'm always excited to work on new projects and collaborate with amazing people.
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item" data-delay="0.1">
+                        <div class="info-icon">📧</div>
+                        <div class="info-details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:john.doe@example.com">yashmaurya2109@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item" data-delay="0.2">
+                        <div class="info-icon">📱</div>
+                        <div class="info-details">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+1234567890">+91 7972273012</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item" data-delay="0.3">
+                        <div class="info-icon">📍</div>
+                        <div class="info-details">
+                            <h3>Location</h3>
+                            <p>Mumbai, Maharashtra</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item" data-delay="0.4">
+                        <div class="info-icon">💼</div>
+                        <div class="info-details">
+                            <h3>LinkedIn</h3>
+                            <p><a href="https://linkedin.com/in/yash-maurya-48751b226" target="_blank">linkedin.com/in/yash-maurya-48751b226</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item" data-delay="0.5">
+                        <div class="info-icon">💻</div>
+                        <div class="info-details">
+                            <h3>GitHub</h3>
+                            <p><a href="https://github.com/yashmaurya321-crypto" target="_blank">github.com/yashmaurya321-crypto</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <div class="contact-form-container">
+                        <form>
                             <div class="form-group">
-                                <input  class="form-control" type="text" placeholder="Name *" required>
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
                             </div>
                             <div class="form-group">
-                                <input class="form-control" type="email" placeholder="Email *" required>
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" id=" placeholder="Message *" rows="7" required></textarea>
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
                             </div>
-                            <div class="form-group ">
-                                <button type="submit" class="form-control btn btn-primary" >Send Message</button>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
                             </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="contact-info-card">
-                        <h4 class="contact-title">Get in touch</h4>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-mobile icon-md"></i>
-                            </div>
-                            <div class="col-10 ">
-                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (91) 7972273012</span></h6>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-map-alt icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Address :<br> <span class="text-muted">Rustomji Global City, Virar (W), Mumbai</span></h6>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-envelope icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Email :<br> <span class="text-muted">yashmaurya2109@gmail.com</span></h6>
-                            </div>
-                        </div>
-                        <ul class="social-icons pt-4">
-                            <li class="social-item"><a class="social-link" target="_blank"  href="https://www.linkedin.com/in/yash-maurya-48751b226/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" target="_blank" href="https://github.com/yashmaurya321-crypto"><i class="ti-github" aria-hidden="true"></i></a></li>
-                </ul> 
-                    </div>
-                </div>
             </div>
-
         </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">Yash Maurya</div>
+                    
+                </div>
+                
+            </div>
+        </footer>
+    </section>
     </div>
-   
 
-	<!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
     <script>
-        document.getElementById('download-cv-btn').addEventListener('click', function() {
-            const link = document.createElement('a');
-            link.href = './Yash(6)CV.pdf';  // Replace with the URL to your CV
-            link.download = 'Yash CV.pdf';  // The name for the downloaded file
-            link.click();
+        // Register ScrollTrigger plugin
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Animate floating elements on load
+        gsap.to(".floating-element", {
+            opacity: 0.6,
+            duration: 1,
+            stagger: 0.2,
+            ease: "power2.out"
         });
-        </script>
-    <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
-    <!-- Isotope  -->
-    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-    
-    <!-- Google mpas
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script> -->
+        // About section animations
+        const aboutTimeline = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".about-section",
+                start: "top 80%",
+                end: "bottom 20%",
+                toggleActions: "play none none reverse"
+            }
+        });
 
-    <!-- JohnDoe js -->
-    <script src="assets/js/johndoe.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+        aboutTimeline
+            .to(".about-label", {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                ease: "power2.out"
+            })
+            .to(".about-title", {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                ease: "power2.out"
+            }, "-=0.4")
+            .to(".about-description", {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                ease: "power2.out"
+            }, "-=0.6")
+            .to(".stat-item", {
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                stagger: 0.1,
+                ease: "power2.out"
+            }, "-=0.4")
+            .to(".skill-item", {
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                stagger: 0.1,
+                ease: "power2.out"
+            }, "-=0.3")
+            .to(".download-btn", {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                ease: "power2.out"
+            }, "-=0.4")
+            .to(".image-container", {
+                opacity: 1,
+                scale: 1,
+                duration: 1.2,
+                ease: "power2.out"
+            }, "-=1.2");
 
-    <!-- Include the Firestore SDK -->
-    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
-    
+        // Counter animation for stats
+        function animateCounter(element, target) {
+            const counter = { value: 0 };
+            const isPercentage = target.includes('%');
+            const numericTarget = parseInt(target.replace(/[^0-9]/g, ''));
+            
+            gsap.to(counter, {
+                value: numericTarget,
+                duration: 2,
+                ease: "power2.out",
+                onUpdate: function() {
+                    const current = Math.round(counter.value);
+                    if (isPercentage) {
+                        element.textContent = current + '%';
+                    } else if (target.includes('+')) {
+                        element.textContent = current + '+';
+                    } else {
+                        element.textContent = current;
+                    }
+                },
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top 80%",
+                    toggleActions: "play none none reverse"
+                }
+            });
+        }
+
+        // Initialize counter animations
+        document.querySelectorAll('.stat-number').forEach(stat => {
+            const target = stat.textContent;
+            animateCounter(stat, target);
+        });
+
+        // Parallax effect for floating elements
+        gsap.to(".floating-element:nth-child(1)", {
+            y: -50,
+            scrollTrigger: {
+                trigger: ".about-section",
+                start: "top bottom",
+                end: "bottom top",
+                scrub: 1
+            }
+        });
+
+        gsap.to(".floating-element:nth-child(2)", {
+            y: 30,
+            x: -20,
+            scrollTrigger: {
+                trigger: ".about-section",
+                start: "top bottom",
+                end: "bottom top",
+                scrub: 1.5
+            }
+        });
+
+        gsap.to(".floating-element:nth-child(3)", {
+            y: -30,
+            x: 40,
+            scrollTrigger: {
+                trigger: ".about-section",
+                start: "top bottom",
+                end: "bottom top",
+                scrub: 2
+            }
+        });
+
+        // Image hover effect
+        const imageContainer = document.querySelector('.image-container');
+        
+        imageContainer.addEventListener('mouseenter', () => {
+            gsap.to('.image-overlay', {
+                background: 'linear-gradient(45deg, rgba(120, 190, 255, 0.2), transparent)',
+                duration: 0.3
+            });
+        });
+
+        imageContainer.addEventListener('mouseleave', () => {
+            gsap.to('.image-overlay', {
+                background: 'linear-gradient(45deg, rgba(120, 190, 255, 0.1), transparent)',
+                duration: 0.3
+            });
+        });
+
+        // Button hover animations
+        const downloadBtn = document.querySelector('.download-btn');
+        
+        downloadBtn.addEventListener('mouseenter', () => {
+            gsap.to(downloadBtn.querySelector('i'), {
+                x: 5,
+                duration: 0.3,
+                ease: "power2.out"
+            });
+        });
+
+        downloadBtn.addEventListener('mouseleave', () => {
+            gsap.to(downloadBtn.querySelector('i'), {
+                x: 0,
+                duration: 0.3,
+                ease: "power2.out"
+            });
+        });
+
+        // Skill items hover effect
+        document.querySelectorAll('.skill-item').forEach(skill => {
+            skill.addEventListener('mouseenter', () => {
+                gsap.to(skill.querySelector('.skill-icon'), {
+                    scale: 1.2,
+                    duration: 0.3,
+                    ease: "back.out(1.7)"
+                });
+            });
+
+            skill.addEventListener('mouseleave', () => {
+                gsap.to(skill.querySelector('.skill-icon'), {
+                    scale: 1,
+                    duration: 0.3,
+                    ease: "power2.out"
+                });
+            });
+        });
+    </script>
 </body>
 </html>
