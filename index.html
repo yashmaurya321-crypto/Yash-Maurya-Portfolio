@@ -1,665 +1,478 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yash Maurya — Frontend Developer</title>
-<meta name="description" content="Yash Maurya is a Frontend Developer at SpectroNOVA who builds fast, accessible, pixel-perfect interfaces with HTML, CSS and JavaScript.">
-<meta name="author" content="Yash Maurya">
-<meta name="theme-color" content="#05070f">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Yash Maurya — Frontend Developer">
-<meta property="og:description" content="Frontend Developer at SpectroNOVA. I build interfaces that feel effortless — fast, accessible and pixel-perfect.">
-<meta property="og:site_name" content="Yash Maurya Portfolio">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234d7cff'/%3E%3Cstop offset='1' stop-color='%238b5cff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%2305070f'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Arial,sans-serif' font-weight='800' font-size='34' fill='url(%23g)'%3EY%3C/text%3E%3C/svg%3E">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yash Maurya — Full Stack Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Yash Maurya",
-  "jobTitle": "Frontend Developer",
-  "worksFor": { "@type": "Organization", "name": "SpectroNOVA" },
-  "email": "mailto:yash.maurya@spectronovasoft.com",
-  "knowsAbout": ["HTML5", "CSS3", "JavaScript", "TypeScript", "React", "Nuxt", "Node.js", "Express.js", "MongoDB", "Solidity", "Responsive Web Design", "UI Development"]
-}
-</script>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-<!-- Ambient layers -->
-<div class="noise" aria-hidden="true"></div>
-<div class="orbs" aria-hidden="true">
-  <div class="orb orb-a" data-depth="30"></div>
-  <div class="orb orb-b" data-depth="-20"></div>
-  <div class="orb orb-c" data-depth="14"></div>
-</div>
+<svg width="0" height="0" aria-hidden="true" style="position:absolute">
+  <symbol id="i-ne" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M7 17 17 7"/><path d="M9 7h8v8"/></symbol>
+  <symbol id="i-e" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-dl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"><path d="M12 3v12"/><path d="M6 11l6 6 6-6"/><path d="M4 21h16"/></symbol>
+</svg>
 
-<a class="skip-link" href="#home">Skip to content</a>
-
-<!-- ============ NAV ============ -->
-<header class="site-nav" id="siteNav">
-  <div class="container nav-inner">
-    <a class="logo" href="#home" aria-label="Yash Maurya — home">
-      <span class="logo-mark">ym</span><span class="logo-dot">.</span>
-    </a>
-    <nav aria-label="Primary">
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="nav-right">
-      <a class="btn btn-sm btn-primary magnetic" href="#contact">Let's talk</a>
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
-        <span></span><span></span>
-      </button>
-    </div>
+<nav class="nav">
+  <a class="brand" href="#top">
+    <span class="mark"></span>
+    <span>Studio Mono</span>
+  </a>
+  <div class="nav-links">
+    <a class="nav-link" href="#work">Work</a>
+    <a class="nav-link" href="#about">About</a>
+    <a class="nav-link" href="#skills">Skills</a>
+    <a class="nav-link" href="#career">Career</a>
+    <a class="nav-link" href="#services">Services</a>
+    <a class="btn btn-solid btn-sm" href="#contact">Contact <svg class="ico" width="15" height="15"><use href="#i-ne"/></svg></a>
   </div>
-</header>
+</nav>
 
-<main id="main">
+<section id="top" class="hero-sec">
+  <div class="grid-a" aria-hidden="true"></div>
+  <div class="grid-b" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="cells" aria-hidden="true"></div>
+  <div class="scan" aria-hidden="true"></div>
 
-  <!-- ============ HERO ============ -->
-  <section class="hero" id="home">
-    <div class="container hero-inner">
-      <p class="eyebrow hero-eyebrow"><span class="eyebrow-dot"></span>Frontend Developer · SpectroNOVA</p>
-      <h1 class="hero-title" aria-label="Yash Maurya">
-        <span class="line"><span class="line-inner">Yash</span></span>
-        <span class="line"><span class="line-inner grad-text">Maurya<span class="cursor-caret">_</span></span></span>
+  <div class="hero">
+    <div class="hero-main">
+      <div class="status rise" style="--d:.05s">
+        <span class="mark blink"></span>
+        Available for work 
+      </div>
+
+      <h1 class="hero-title">
+        <span class="line"><span class="rise" style="--d:.12s">Full Stack</span></span>
+        <span class="line"><span class="rise" style="--d:.22s">Developer</span></span>
       </h1>
-      <p class="hero-tagline"><span class="line"><span class="line-inner">I build interfaces that feel effortless.</span></span></p>
-      <p class="hero-lede">
-        From intern to Frontend Developer at SpectroNOVA — I craft fast, accessible,
-        pixel-perfect web experiences with JavaScript, TypeScript, React and Nuxt,
-        and I sweat the details most people never notice but everyone feels.
+
+      <div class="wipe"></div>
+
+      <p class="lede rise" style="--d:.6s">
+        I build and ship complete web products — React and Nuxt front-ends, Node and Express APIs, MongoDB data models, and Solidity contracts when the product needs a chain.
       </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary magnetic" href="#projects">View Projects</a>
-        <a class="btn btn-ghost magnetic" href="assets/Yash-Maurya-Resume.pdf" download>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Download Resume
-        </a>
-      </div>
 
-      <div class="hero-chips" aria-hidden="true">
-        <div class="chip float-1"><span class="chip-mono">&lt;/&gt;</span> pixel-perfect UI</div>
-        <div class="chip float-2"><span class="chip-mono">60fps</span> smooth by default</div>
-        <div class="chip float-3"><span class="chip-mono">a11y</span> built for everyone</div>
+      <div class="cta rise" style="--d:.72s">
+        <a class="btn btn-solid" href="#work">View selected work <svg class="ico" width="16" height="16"><use href="#i-e"/></svg></a>
+        <a class="btn btn-outline" href="#contact">Book a call</a>
       </div>
     </div>
 
-    <a class="scroll-cue" href="#about" aria-label="Scroll to About section">
-      <span class="mouse"><span class="wheel"></span></span>
-      <span class="scroll-label">scroll</span>
-    </a>
-  </section>
-
-  <!-- ============ ABOUT ============ -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-visual reveal" data-tilt>
-          <div class="portrait-frame">
-            <!-- Replace this placeholder with your photo:
-                 <img src="assets/profile.jpg" alt="Yash Maurya" class="portrait-img"> -->
-            <div class="portrait-placeholder" role="img" aria-label="Stylized monogram of Yash Maurya">
-              <img src="assets/Yash.jpg" alt="Yash Maurya" class="portrait-monogram">
-              
-            </div>
-          </div>
-          <div class="deco-ring" aria-hidden="true"></div>
-          <div class="deco-dots" aria-hidden="true"></div>
-          <div class="chip about-badge">
-            <span class="chip-mono">3+</span> years of building for the web
-          </div>
-        </div>
-
-        <div class="about-copy">
-          <p class="eyebrow reveal"><span class="eyebrow-dot"></span>~/about-me</p>
-          <h2 class="section-title reveal">Turning ideas into interfaces<br class="br-lg"> people enjoy using.</h2>
-          <div class="about-text reveal">
-            <p>
-              My journey started with an internship and a stubborn curiosity about how great
-              websites are made. Two internships later I joined <strong>SpectroNOVA</strong> as a
-              Junior Frontend Developer — and earned a promotion to <strong>Frontend Developer</strong>,
-              where I now own complete features from first wireframe to production.
-            </p>
-            <p>
-              Day to day, I build scalable UI architecture, responsive dashboards and
-              production-ready applications, working closely with designers and backend
-              engineers. What keeps me hooked is the craft: clean markup, considered motion,
-              and interfaces that stay fast on any device.
-            </p>
-          </div>
-          <div class="about-actions reveal">
-            <a class="btn btn-primary magnetic" href="assets/Yash-Maurya-Resume.pdf" download>Download Resume</a>
-          </div>
-          <div class="stats-row">
-            <div class="stat-card glass reveal">
-              <span class="stat-num"><span class="count" data-count="3">0</span>+</span>
-              <span class="stat-label">Years of Experience</span>
-            </div>
-            <div class="stat-card glass reveal">
-              <span class="stat-num"><span class="count" data-count="25">0</span>+</span>
-              <span class="stat-label">Projects Completed</span>
-            </div>
-            <div class="stat-card glass reveal">
-              <span class="stat-num"><span class="count" data-count="12">0</span>+</span>
-              <span class="stat-label">Technologies Used</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ EXPERIENCE ============ -->
-  <section class="section" id="experience">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow reveal"><span class="eyebrow-dot"></span>~/career-journey</p>
-        <h2 class="section-title reveal">The road from intern<br class="br-lg"> to Frontend Developer.</h2>
-        <p class="section-sub reveal">Every role taught me something the next one needed.</p>
-      </div>
-
-      <div class="timeline" id="timeline">
-        <div class="tl-line" aria-hidden="true"><span class="tl-progress" id="tlProgress"></span></div>
-
-        <article class="tl-item reveal">
-          <span class="tl-node" aria-hidden="true"></span>
-          <div class="tl-card glass" data-tilt>
-            <div class="tl-meta">
-              <span class="tl-period">2024 · 3 mos</span>
-              <span class="tl-type">Internship</span>
-            </div>
-           <h3 class="tl-role">React Native Developer Intern</h3>
-
-<ul class="tl-points">
-  <li>Joined as a React Native Developer Intern and contributed to both React Native and MERN stack projects</li>
-  <li>Developed mobile application features and reusable UI components using React Native</li>
-  <li>Built and maintained full-stack web application features using the MERN stack</li>
-  <li>Integrated REST APIs, fixed bugs, and implemented new features across frontend and backend</li>
-  <li>Collaborated with the development team using Git and followed version control best practices</li>
-</ul>
-
-<div class="tl-tech">
-  <span>React Native</span>
-  <span>React</span>
-  <span>Node.js</span>
-  <span>Express.js</span>
-  <span>MongoDB</span>
-  <span>Git</span>
-</div>
-          </div>
-        </article>
-
-        <article class="tl-item reveal">
-          <span class="tl-node" aria-hidden="true"></span>
-      <div class="tl-card glass" data-tilt>
-  <div class="tl-meta">
-    <span class="tl-period">2024 · 2 mos</span>
-    <span class="tl-type">Internship</span>
+    <dl class="facts rise" style="--d:.5s">
+      <div class="fact"><dt>Stack</dt><dd>React · Node · MongoDB</dd></div>
+      <div class="fact"><dt>Now</dt><dd>Nuxt · TypeScript · Supabase</dd></div>
+      <div class="fact"><dt>Since</dt><dd>2022</dd></div>
+      <div class="fact"><dt>Email</dt><dd><a class="ul" href="mailto:hello@yourdomain.com">yashmaurya2109@gmail.com</a></dd></div>
+    </dl>
   </div>
 
-  <h3 class="tl-role">React Native Development Intern</h3>
+  <div class="ticker"><div class="ticker-track"></div></div>
+</section>
 
-  <ul class="tl-points">
-    <li>Developed a full-stack subscription-based mobile application using React Native, Express.js, and MongoDB</li>
-    <li>Integrated Razorpay payment gateway for secure subscription payments and transaction handling</li>
-    <li>Designed and implemented REST APIs for user authentication, subscriptions, and application data</li>
-    <li>Built reusable React Native components and optimized app performance for a smooth user experience</li>
-    <li>Collaborated with the development team using Git while contributing to feature development and bug fixes</li>
-  </ul>
+<section id="about">
+  <header class="sec-head">
+    <div class="eyebrow"><span><span class="mark"></span>~/about</span><span>Full stack developer</span></div>
+    <h2 class="sec-title">One person,<br>whole product.</h2>
+  </header>
 
-  <div class="tl-tech">
-    <span>React Native</span>
-    <span>Express.js</span>
-    <span>MongoDB</span>
-    <span>REST API</span>
-    <span>Razorpay</span>
-    <span>Git</span>
+  <div class="about">
+    <div data-reveal>
+      <p class="lead">I work across the whole stack: interface, API, data model and deployment. That means fewer handoffs, tighter feedback loops, and features that go out the door the week they are designed.</p>
+      <p class="copy">Most of my work is with small product teams — building an MVP from an empty repository, or coming into an existing codebase to make it fast, typed and testable. I care about clear data models, honest loading states, and shipping on a schedule.</p>
+      <dl class="meta">
+        <div class="meta-row"><dt>Role</dt><dd>Frontend Developer</dd></div>
+        <div class="meta-row"><dt>Company</dt><dd>SpectroNOVA</dd></div>
+        <div class="meta-row"><dt>Stack</dt><dd>Nuxt · TypeScript · Supabase</dd></div>
+        <div class="meta-row"><dt>Status</dt><dd>Open to new work</dd></div>
+      </dl>
+      <div class="cta">
+        <a class="btn btn-outline" href="assets/Yash-Maurya-Resume.pdf" download>Download CV <svg class="ico" width="16" height="16"><use href="#i-dl"/></svg></a>
+      </div>
+    </div>
+
+    <figure class="portrait  shot" data-label="Drop your photo" data-reveal>
+      <img src="assets/Yash.jpg" alt="Portrait">
+    </figure>
   </div>
-</div>
-        </article>
 
-        <article class="tl-item reveal">
-          <span class="tl-node" aria-hidden="true"></span>
-          <div class="tl-card glass" data-tilt>
-            <div class="tl-meta">
-              <span class="tl-period">2025 – 2026</span>
-              <span class="tl-type">Full-time</span>
-            </div>
-            <h3 class="tl-role">Junior Frontend Developer</h3>
-            <p class="tl-company">SpectroNOVA</p>
-            <ul class="tl-points">
-              <li>Developed production features used by real customers</li>
-              <li>Built reusable UI components adopted across the product</li>
-              <li>Created responsive dashboards for data-heavy screens</li>
-              <li>Worked with the backend team on API contracts</li>
-              <li>Improved application performance and fixed critical bugs</li>
-            </ul>
-            <div class="tl-tech"><span>Nuxtjs</span><span>CSS</span><span>Git</span><span>Typescript</span></div>
-          </div>
-        </article>
-
-        <div class="tl-promo reveal" aria-label="Promoted from Junior Frontend Developer to Frontend Developer">
-          <span class="promo-badge">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 2 4.6 13.4c-.3.4 0 1 .5 1h5.4l-1.5 7.2c-.1.6.6.9 1 .4L18.4 10.6c.3-.4 0-1-.5-1h-5.4l1.5-7.2c.1-.6-.6-.9-1-.4z"/></svg>
-            PROMOTED
-          </span>
-        </div>
-
-        <article class="tl-item tl-current reveal">
-          <span class="tl-node" aria-hidden="true"></span>
-          <div class="tl-card glass" data-tilt>
-            <div class="tl-meta">
-              <span class="tl-period">2026 – Present</span>
-              <span class="tl-type">Full-time</span>
-              <span class="tl-now">Current</span>
-            </div>
-            <h3 class="tl-role">Frontend Developer</h3>
-            <p class="tl-company">SpectroNOVA</p>
-            <ul class="tl-points">
-              <li>Promoted from Junior Frontend Developer</li>
-              <li>Independently develop complete frontend features</li>
-              <li>Build scalable UI architecture for the product</li>
-              <li>Improve user experience across key flows</li>
-              <li>Work closely with designers and backend developers</li>
-              <li>Deliver production-ready applications</li>
-            </ul>
-            <div class="tl-tech"><span>Nuxtjs</span><span>CSS</span><span>Git</span><span>Typescript</span></div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ SKILLS ============ -->
-  <section class="section" id="skills">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow reveal"><span class="eyebrow-dot"></span>~/skills</p>
-        <h2 class="section-title reveal">Frontend at the core,<br class="br-lg"> full-stack in reach.</h2>
-        <p class="section-sub reveal">From pixel-perfect UI to APIs, databases and Web3.</p>
-      </div>
-
-      <div class="skill-groups">
-        <div class="skill-group">
-          <p class="group-label reveal"><span class="eyebrow-dot"></span>~/frontend</p>
-          <div class="skill-tiles">
-            <article class="tile glass reveal" data-tilt>
-              <span class="tile-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="38" height="38"><path fill="#E34F26" d="M3.5 2h17l-1.55 17.5L12 22l-6.95-2.5z"/><path fill="#FF6D3F" d="M12 3.8h6.9l-1.2 14.4L12 20.2z" opacity=".6"/><text x="12" y="15.6" text-anchor="middle" font-size="9.5" font-weight="700" fill="#fff" font-family="Arial, sans-serif">5</text></svg></span>
-              <span class="tile-name">HTML5</span>
-            </article>
-            <article class="tile glass reveal" data-tilt>
-              <span class="tile-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="38" height="38"><path fill="#1572B6" d="M3.5 2h17l-1.55 17.5L12 22l-6.95-2.5z"/><path fill="#33A9DC" d="M12 3.8h6.9l-1.2 14.4L12 20.2z" opacity=".6"/><text x="12" y="15.6" text-anchor="middle" font-size="9.5" font-weight="700" fill="#fff" font-family="Arial, sans-serif">3</text></svg></span>
-              <span class="tile-name">CSS3</span>
-            </article>
-            <article class="tile glass reveal" data-tilt>
-              <span class="tile-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="38" height="38"><rect width="24" height="24" rx="4" fill="#F7DF1E"/><text x="12.2" y="16.8" text-anchor="middle" font-size="10" font-weight="800" fill="#0a0e1e" font-family="Arial, sans-serif">JS</text></svg></span>
-              <span class="tile-name">JavaScript</span>
-            </article>
-            <article class="tile glass reveal" data-tilt>
-              <span class="tile-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="38" height="38"><rect width="24" height="24" rx="4" fill="#3178C6"/><text x="12.2" y="16.6" text-anchor="middle" font-size="9.5" font-weight="800" fill="#fff" font-family="Arial, sans-serif">TS</text></svg></span>
-              <span class="tile-name">TypeScript</span>
-            </article>
-            <article class="tile glass reveal" data-tilt>
-              <span class="tile-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="38" height="38" fill="none" stroke="#61DAFB" stroke-width="1"><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/><circle cx="12" cy="12" r="1.9" fill="#61DAFB" stroke="none"/></svg></span>
-              <span class="tile-name">React</span>
-            </article>
-            <article class="tile glass reveal" data-tilt>
-              <span class="tile-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="38" height="38"><polygon points="9.2 6.8 16.8 19.5 1.6 19.5" fill="#00DC82"/><polygon points="15.4 10.2 21 19.5 11.7 19.5" fill="#00DC82" opacity=".55"/></svg></span>
-              <span class="tile-name">Nuxt</span>
-            </article>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <p class="group-label reveal"><span class="eyebrow-dot"></span>~/backend</p>
-          <div class="skill-tiles">
-            <article class="tile glass reveal" data-tilt>
-              <span class="tile-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="38" height="38"><polygon points="12 1.6 21.2 6.8 21.2 17.2 12 22.4 2.8 17.2 2.8 6.8" fill="#339933"/><text x="12" y="15.4" text-anchor="middle" font-size="8.5" font-weight="800" fill="#fff" font-family="Arial, sans-serif">JS</text></svg></span>
-              <span class="tile-name">Node.js</span>
-            </article>
-            <article class="tile glass reveal" data-tilt>
-              <span class="tile-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="38" height="38"><rect width="24" height="24" rx="4" fill="#1b2137"/><text x="12" y="16.4" text-anchor="middle" font-size="10" font-weight="700" font-style="italic" fill="#e8ecf8" font-family="Georgia, serif">ex</text></svg></span>
-              <span class="tile-name">Express.js</span>
-            </article>
-            <article class="tile glass reveal" data-tilt>
-              <span class="tile-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="38" height="38"><path fill="#47A248" d="M12 1.5c2.9 4.3 4.6 7.8 4.6 11.4 0 3.5-2 6.1-4.1 8.1-2.1-2-4.9-4.6-4.9-8.1C7.6 9.3 9.1 5.8 12 1.5z"/><path fill="#2e7d32" d="M12 1.5v19.5c-.2-.2-.4-.4-.6-.6.2-6.3.3-12.6.6-18.9z"/><rect x="11.6" y="19" width=".9" height="3.4" rx=".45" fill="#8bc34a"/></svg></span>
-              <span class="tile-name">MongoDB</span>
-            </article>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <p class="group-label reveal"><span class="eyebrow-dot"></span>~/web3</p>
-          <div class="skill-tiles">
-            <article class="tile glass reveal" data-tilt>
-              <span class="tile-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="38" height="38"><polygon points="12 .8 16.4 8 12 15.2 7.6 8" fill="#8A92B2"/><polygon points="12 8.8 16.4 16 12 23.2 7.6 16" fill="#C1C8E4" opacity=".8"/></svg></span>
-              <span class="tile-name">Solidity</span>
-            </article>
-            <article class="tile glass reveal" data-tilt>
-              <span class="tile-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="38" height="38"><polygon points="2.5 2 10.4 7.4 8.9 11.2 4.2 10.2 3 6.5" fill="#E2761B"/><polygon points="21.5 2 13.6 7.4 15.1 11.2 19.8 10.2 21 6.5" fill="#E2761B"/><polygon points="8.9 11.2 12 9.4 15.1 11.2 14.2 16.4 12 18.4 9.8 16.4" fill="#F6851B"/><polygon points="4.2 10.2 8.9 11.2 9.8 16.4 6 14.4" fill="#CC6228"/><polygon points="19.8 10.2 15.1 11.2 14.2 16.4 18 14.4" fill="#CC6228"/><polygon points="9.8 16.4 12 18.4 14.2 16.4 13.6 20.2 10.4 20.2" fill="#763D16"/></svg></span>
-              <span class="tile-name">MetaMask</span>
-            </article>
-          </div>
-        </div>
-      </div>
-
-      <div class="skill-pills reveal" aria-label="Also comfortable with">
-        <span class="pill-label">Also in the toolbox:</span>
-        <span class="pill">Git &amp; GitHub</span>
-        <span class="pill">REST APIs</span>
-        <span class="pill">Responsive Design</span>
-        <span class="pill">Accessibility</span>
-        <span class="pill">Performance Tuning</span>
-        <span class="pill">UI Animation</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ PROJECTS ============ -->
-  <section class="section" id="projects">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow reveal"><span class="eyebrow-dot"></span>~/featured-projects</p>
-        <h2 class="section-title reveal">Selected work,<br class="br-lg"> built to ship.</h2>
-        <p class="section-sub reveal">Real products, real constraints, real users.</p>
-      </div>
-
-      <div class="projects-grid">
-        <article class="project-card glass reveal" data-tilt>
-          <div class="project-media" aria-hidden="true">
-            <img src="assets/1744119462743.jpg" alt="Task Management SaaS" class="project-img"/>
-            <span class="project-badge">Blockchain</span>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">Blockchain ERC20 Token</h3>
-            <p class="project-desc">Developed a blockchain dashboard for managing ERC-20 tokens, enabling wallet connection, real-time balance tracking, token transfers, transaction history, and holder management through Ethereum smart contracts.</p>
-            <div class="project-tech">
-              <span>React.js</span>
-              <span>Solidity</span>
-              <span>Hardhat</span>
-              <span>ethers.js</span>
-              <span>OpenZeppelin</span>
-              <span>Ethereum</span>
-            </div>
-            <div class="project-actions">
-              <a class="btn btn-sm btn-ghost magnetic" href="https://github.com/yashmaurya321-crypto/YashToken" target="_blank" rel="noopener">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.05.78 2.12v3.15c0 .3.21.67.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
-                GitHub
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card glass reveal" data-tilt>
-          <div class="project-media" aria-hidden="true">
-            <img src="assets/1744440763506.jpg" alt="Task Management SaaS" class="project-img"/>
-            <span class="project-badge">Blockchain</span>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">CrowdFunding DApp</h3>
-            <p class="project-desc">Built a decentralized crowdfunding platform where users can securely fund campaigns using MetaMask and Ethereum. Implemented Solidity smart contracts with owner-based campaign creation, enabling transparent and trustless fundraising on the blockchain.</p>
-            <div class="project-tech">
-              <span>React.js</span>
-              <span>Solidity</span>
-              <span>Hardhat</span>
-              <span>ethers.js</span>
-              <span>OpenZeppelin</span>
-              <span>Ethereum</span>
-            </div>
-            <div class="project-actions">
-              <a class="btn btn-sm btn-ghost magnetic" href="https://github.com/yashmaurya321-crypto/YashToken" target="_blank" rel="noopener">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.05.78 2.12v3.15c0 .3.21.67.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
-                GitHub
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card glass reveal" data-tilt>
-          <div class="project-media" aria-hidden="true">
-            <img src="/assets/Screenshot (497).png" alt="Project Image" class="project-img">
-            <span class="project-badge">Website</span>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">Portfolio Website</h3>
-            <p class="project-desc">Designed and developed a modern cinematic-style website inspired by the media and film distribution industry, featuring premium UI/UX, smooth animations, interactive sections, and responsive layouts. Leveraged AI to accelerate ideation and content exploration while independently implementing the frontend using HTML, CSS, and JavaScript</p>
-            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-            
-          </div>
-        </article>
-        
-        <article class="project-card glass reveal" data-tilt>
-          <div class="project-media" aria-hidden="true">
-            <img src="/assets/AI-BUDJET.png" alt="Project Image" class="project-img">
-            <span class="project-badge">AI APP</span>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">AI Budget Tracker</h3>
-            <p class="project-desc">Developed an AI-powered personal finance application that helps users manage budgets, track expenses, and receive AI-generated spending insights and future expense predictions. Implemented secure authentication and personalized financial recommendations.</p>
-            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-            <div class="project-actions">
-              <a class="btn btn-sm btn-ghost magnetic" href="https://github.com/yashmaurya321-crypto/College_Project_Froentend" target="_blank" rel="noopener">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.05.78 2.12v3.15c0 .3.21.67.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
-                GitHub
-              </a>
-            </div>
-          </div>
-        </article>
- 
-        <article class="project-card glass reveal" data-tilt>
-          <div class="project-media" aria-hidden="true">
-            <img src="/assets/blodapp.png" alt="Project Image" class="project-img">
-            <span class="project-badge">Blog APP</span>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">Blog Application</h3>
-            <p class="project-desc">Created a full-featured Blog App using the MERN stack with JWT auth, category-based sorting, likes, comments, search, and a user dashboard — all styled with responsive Bootstrap UI.</p>
-            <div class="project-tech"><span>React</span><span>Nodejs</span><span>Expressjs</span><span>Mongodb</span></div>
-            <div class="project-actions">
-              <a class="btn btn-sm btn-ghost magnetic" href="https://github.com/yashmaurya321-crypto/Blog-app" target="_blank" rel="noopener">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.05.78 2.12v3.15c0 .3.21.67.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
-                GitHub
-              </a>
-              
-            </div>
-          </div>
-        </article>
-
-
-        <article class="project-card glass reveal" data-tilt>
-          <div class="project-media" aria-hidden="true">
-            <img src="/assets/LMS.png" alt="Task Management SaaS" class="project-img"/>
-            <span class="project-badge">SaaS</span>
-          </div>
-          <div class="project-body">
-            <h3 class="project-title">Lerning Management SaaS</h3>
-            <p class="project-desc">A full-stack MERN application featuring secure authentication, course management, Razorpay payment integration, Cloudinary image uploads, and dedicated dashboards for students and administrators.</p>
-            <div class="project-tech"><span>React</span><span>CSS</span><span>Nodejs</span><span>Expressjs</span><span>Mongodb</span><span>Razorpay</span></div>
-            <div class="project-actions">
-              <a class="btn btn-sm btn-ghost magnetic" href="https://github.com/yashmaurya321-crypto/LMS/tree/New-master" target="_blank" rel="noopener">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.05.78 2.12v3.15c0 .3.21.67.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
-                Froentend GitHub
-              </a>
-              
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ SERVICES ============ -->
-  <section class="section" id="services">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow reveal"><span class="eyebrow-dot"></span>~/services</p>
-        <h2 class="section-title reveal">What I can do<br class="br-lg"> for your product.</h2>
-      </div>
-
-      <div class="services-grid">
-        <article class="service-card glass reveal">
-          <div class="service-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
-          <h3>Frontend Development</h3>
-          <p>Clean, maintainable interfaces built with semantic HTML, modern CSS and vanilla JavaScript.</p>
-        </article>
-        <article class="service-card glass reveal">
-          <div class="service-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
-          <h3>Responsive Web Design</h3>
-          <p>Layouts that adapt beautifully from a 4-inch phone to an ultrawide monitor.</p>
-        </article>
-        <article class="service-card glass reveal">
-          <div class="service-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg></div>
-          <h3>UI Development</h3>
-          <p>Design systems and reusable components that keep products consistent as they grow.</p>
-        </article>
-        <article class="service-card glass reveal">
-          <div class="service-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m16.2 7.8 2.9-2.9"/><path d="M18 12h4"/><path d="M4.9 4.9l2.9 2.9"/><path d="M2 12h4"/><path d="M12 12l3 5"/><path d="M5 19a9 9 0 0 1 14 0"/></svg></div>
-          <h3>Performance Optimization</h3>
-          <p>Faster loads, smoother scrolling, better Core Web Vitals — measured, not guessed.</p>
-        </article>
-        <article class="service-card glass reveal">
-          <div class="service-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.9 2.4L22 18.3l-2.1.9L19 21.5l-.9-2.3-2.1-.9 2.1-.9z"/></svg></div>
-          <h3>Modern Web Applications</h3>
-          <p>Interactive, app-like experiences on the web — from dashboards to full products.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ============ CERTIFICATIONS ============ -->
-  <section class="section" id="certifications">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow reveal"><span class="eyebrow-dot"></span>~/certifications</p>
-        <h2 class="section-title reveal">Proof of the craft.</h2>
-      </div>
-
-      <!-- Placeholder certificates — replace titles/orgs/links with your real ones -->
-      <div class="certs-grid">
-        <article class="cert-card glass reveal">
-          <div class="cert-media cert-a" aria-hidden="true">
-            <img src="assets/javascript_basic certificate_page-0001.jpg" alt="Placeholder image">
-          </div>
-          <div class="cert-body">
-            <h3>Javascript Basic certificate</h3>
-            <p class="cert-org">HackerRank</p>
-          </div>
-        </article>
-        <article class="cert-card glass reveal">
-          <div class="cert-media cert-b" aria-hidden="true">
-           <img src="assets/MERN_page-0001.jpg" alt="Placeholder image">  
-          </div>
-          <div class="cert-body">
-            <h3>MERN Certificate</h3>
-            <p class="cert-org">SkillUp</p>
-          </div>
-        </article>
-        <article class="cert-card glass reveal">
-          <div class="cert-media cert-c" aria-hidden="true">
-           <img src="assets/react js_page-0001.jpg" alt="Placeholder image">            
-          </div>
-          <div class="cert-body">
-            <h3>React Js Certificate</h3>
-            <p class="cert-org">Great Learning</p>
-          </div>
-        </article>
-        <article class="cert-card glass reveal">
-          <div class="cert-media cert-c" aria-hidden="true">
-           <img src="assets/1733147307454.jpg" alt="Placeholder image">            
-          </div>
-          <div class="cert-body">
-            <h3>Certificate of internship complete</h3>
-            <p class="cert-org">Geneus Solution</p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CONTACT ============ -->
-  <section class="section section-contact" id="contact">
-    <div class="contact-orbs" aria-hidden="true"><span></span><span></span></div>
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow reveal"><span class="eyebrow-dot"></span>~/contact</p>
-        <h2 class="section-title reveal">Let's build something<br class="br-lg"> people remember.</h2>
-      </div>
-
-      <div class="contact-panel glass reveal">
-        <span class="availability"><span class="avail-dot"></span>Available for new opportunities</span>
-        <p class="contact-lede">
-          Have a role, a project, or just a question about frontend?
-          My inbox is open — I usually reply within a day.
-        </p>
-        <a class="btn btn-primary btn-lg" href="mailto:yash.maurya@spectronovasoft.com">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 6 9 7 9-7"/></svg>
-          yashmaurya2109@gmail.com
-        </a>
-        <ul class="contact-links">
-          <li>
-            <a class="contact-pill" href="https://github.com/yashmaurya321-crypto" target="_blank" rel="noopener">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.05.78 2.12v3.15c0 .3.21.67.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
-              GitHub
-            </a>
-          </li>
-          <li>
-            <a class="contact-pill" href="https://www.linkedin.com/in/yash-maurya-48751b226/" target="_blank" rel="noopener">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
-              LinkedIn
-            </a>
-          </li>
-          <li>
-            <span class="contact-pill">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              India · Remote-friendly
-            </span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<!-- ============ FOOTER ============ -->
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <a class="logo" href="#home" aria-label="Back to top — Yash Maurya">
-      <span class="logo-mark">ym</span><span class="logo-dot">.</span>
-    </a>
-    <nav class="footer-nav" aria-label="Footer">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="footer-social">
-      <a href="https://github.com/yashmaurya321-crypto" target="_blank" rel="noopener" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-2.17c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.78 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.05.78 2.12v3.15c0 .3.21.67.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg></a>
-      <a href="https://www.linkedin.com/in/yash-maurya-48751b226/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
-      <a href="mailto:yashmaurya2109@gmail.com" aria-label="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 6 9 7 9-7"/></svg></a>
-    </div>
-    <p class="footer-copy">© <span id="year">2026</span> Yash Maurya </p>
+  <div class="stats">
+    <div class="stat"><span class="stat-n">2022</span><span class="stat-l">Started building</span></div>
+    <div class="stat"><span class="stat-n">2</span><span class="stat-l">Internships</span></div>
+    <div class="stat"><span class="stat-n">2</span><span class="stat-l">Roles at SpectroNOVA</span></div>
+    <div class="stat"><span class="stat-n">1</span><span class="stat-l">Promotion</span></div>
   </div>
-</footer>
+</section>
 
-<button class="to-top" id="toTop" aria-label="Back to top">
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
-</button>
+<section id="career">
+  <header class="sec-head">
+    <div class="eyebrow"><span><span class="mark"></span>Career</span><span>2026 — Present</span></div>
+    <h2 class="sec-title">Experience</h2>
+  </header>
 
-<script src="js/main.js" defer></script>
+  <article class="exp" data-reveal>
+    <div class="exp-when">
+      <div class="exp-date">2024 · 3 mos</div>
+      <div class="chips"><span class="chip">Internship</span></div>
+    </div>
+    <div class="exp-body">
+      <h3>React Native Developer Intern</h3>
+      <p class="copy">Joined as a React Native Developer Intern and contributed to both React Native and MERN stack projects</p>
+      <ul class="bullets">
+        <li>Developed mobile application features and reusable UI components using React Native</li>
+        <li>Built and maintained full-stack web application features using the MERN stack</li>
+        <li>Integrated REST APIs, fixed bugs, and implemented new features across frontend and backend</li>
+        <li>Collaborated with the development team using Git and followed version control best practices</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">React Native</span><span class="tag">React</span><span class="tag">Node.js</span>
+        <span class="tag">Express.js</span><span class="tag">MongoDB</span><span class="tag">Git</span>
+      </div>
+    </div>
+  </article>
+
+  <article class="exp" data-reveal>
+    <div class="exp-when">
+      <div class="exp-date">2024 · 2 mos</div>
+      <div class="chips"><span class="chip">Internship</span></div>
+    </div>
+    <div class="exp-body">
+      <h3>React Native Development Intern</h3>
+      <ul class="bullets">
+        <li>Developed a full-stack subscription-based mobile application using React Native, Express.js, and MongoDB</li>
+        <li>Integrated Razorpay payment gateway for secure subscription payments and transaction handling</li>
+        <li>Designed and implemented REST APIs for user authentication, subscriptions, and application data</li>
+        <li>Built reusable React Native components and optimized app performance for a smooth user experience</li>
+        <li>Collaborated with the development team using Git while contributing to feature development and bug fixes</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">React Native</span><span class="tag">Express.js</span><span class="tag">MongoDB</span>
+        <span class="tag">REST API</span><span class="tag">Razorpay</span><span class="tag">Git</span>
+      </div>
+    </div>
+  </article>
+
+  <article class="exp" data-reveal>
+    <div class="exp-when">
+      <div class="exp-date">2025 – 2026</div>
+      <div class="chips"><span class="chip">Full-time</span><span class="chip chip-solid">Promoted</span></div>
+    </div>
+    <div class="exp-body">
+      <h3>Junior Frontend Developer</h3>
+      <div class="exp-org">SpectroNOVA</div>
+      <ul class="bullets">
+        <li>Developed production features used by real customers</li>
+        <li>Built reusable UI components adopted across the product</li>
+        <li>Created responsive dashboards for data-heavy screens</li>
+        <li>Worked with the backend team on API contracts</li>
+        <li>Improved application performance and fixed critical bugs</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Nuxtjs</span><span class="tag">CSS</span><span class="tag">Git</span><span class="tag">Typescript</span>
+      </div>
+    </div>
+  </article>
+
+  <article class="exp exp-current" data-reveal>
+    <div class="exp-when">
+      <div class="exp-date">2026 – Present</div>
+      <div class="chips">
+        <span class="chip">Full-time</span>
+        <span class="chip chip-solid"><span class="mark mark-light blink"></span>Current</span>
+      </div>
+    </div>
+    <div class="exp-body">
+      <h3>Frontend Developer</h3>
+      <div class="exp-org">SpectroNOVA</div>
+      <ul class="bullets">
+        <li>Promoted from Junior Frontend Developer</li>
+        <li>Independently develop complete frontend features</li>
+        <li>Build scalable UI architecture for the product</li>
+        <li>Improve user experience across key flows</li>
+        <li>Work closely with designers and backend developers</li>
+        <li>Deliver production-ready applications</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Nuxtjs</span><span class="tag">CSS</span><span class="tag">Git</span><span class="tag">Typescript</span>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section id="skills">
+  <header class="sec-head" data-reveal>
+    <div class="eyebrow"><span><span class="mark"></span>~/skills</span><span>Eleven core tools</span></div>
+    <h2 class="sec-title">Frontend at the core,<br>full-stack in reach.</h2>
+    <p class="sec-sub">From pixel-perfect UI to APIs, databases and Web3.</p>
+  </header>
+
+  <div class="skill-group" data-reveal>
+    <div class="skill-key"><span class="skill-key-name">~/frontend</span><span class="skill-key-count">Seven</span></div>
+    <div>
+      <div class="skill"><span class="sk-n">01</span><span class="sk-name">HTML5</span><span class="sk-kind">markup</span></div>
+      <div class="skill"><span class="sk-n">02</span><span class="sk-name">CSS3</span><span class="sk-kind">styling</span></div>
+      <div class="skill"><span class="sk-n">03</span><span class="sk-name">JavaScript</span><span class="sk-kind">language</span></div>
+      <div class="skill"><span class="sk-n">04</span><span class="sk-name">TypeScript</span><span class="sk-kind">typed</span></div>
+      <div class="skill"><span class="sk-n">05</span><span class="sk-name">React</span><span class="sk-kind">library</span></div>
+      <div class="skill"><span class="sk-n">06</span><span class="sk-name">Nuxt</span><span class="sk-kind">framework</span></div>
+      <div class="skill"><span class="sk-n">07</span><span class="sk-name">React Native</span><span class="sk-kind">framework</span></div>
+
+    </div>
+  </div>
+
+  <div class="skill-group" data-reveal>
+    <div class="skill-key"><span class="skill-key-name">~/backend</span><span class="skill-key-count">Four</span></div>
+    <div>
+      <div class="skill"><span class="sk-n">01</span><span class="sk-name">Node.js</span><span class="sk-kind">runtime</span></div>
+      <div class="skill"><span class="sk-n">02</span><span class="sk-name">Express.js</span><span class="sk-kind">api</span></div>
+      <div class="skill"><span class="sk-n">03</span><span class="sk-name">MongoDB</span><span class="sk-kind">database</span></div>
+      <div class="skill"><span class="sk-n">04</span><span class="sk-name">Supabase</span><span class="sk-kind">database and api</span></div>
+
+    </div>
+  </div>
+
+  <div class="skill-group" data-reveal>
+    <div class="skill-key"><span class="skill-key-name">~/payment</span><span class="skill-key-count">One</span></div>
+    <div>
+      <div class="skill"><span class="sk-n">01</span><span class="sk-name">Razorpay</span></div>
+
+    </div>
+  </div>
+
+  <div class="skill-group" data-reveal>
+    <div class="skill-key"><span class="skill-key-name">~/web3</span><span class="skill-key-count">Two</span></div>
+    <div>
+      <div class="skill"><span class="sk-n">01</span><span class="sk-name">Solidity</span><span class="sk-kind">contracts</span></div>
+      <div class="skill"><span class="sk-n">02</span><span class="sk-name">MetaMask</span><span class="sk-kind">wallet</span></div>
+    </div>
+  </div>
+
+  <div class="skill-group">
+    <div class="skill-key-name">Also in the toolbox:</div>
+    <div class="tags tags-lg">
+      <span class="tag">Git &amp; GitHub</span><span class="tag">REST APIs</span><span class="tag">Responsive Design</span>
+      <span class="tag">Accessibility</span><span class="tag">Performance Tuning</span><span class="tag">UI Animation</span>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <header class="sec-head">
+    <div class="eyebrow"><span><span class="mark"></span>~/projects</span><span>Six builds · Web &amp; Web3</span></div>
+    <h2 class="sec-title">Personal projects</h2>
+  </header>
+
+  <div class="cards">
+
+    <article class="card" data-reveal>
+      <div class="shot shot-16x10 " data-label="Drop Blockchain ERC20 Token screenshot"><img src="assets/1744119462743.jpg" alt="Blockchain ERC20 Token"></div>
+      <div class="card-body">
+        <div class="card-top"><span class="card-cat">Blockchain</span><span class="card-num">01</span></div>
+        <h3 class="card-title">Blockchain ERC20 Token</h3>
+        <p class="card-desc">Developed a blockchain dashboard for managing ERC-20 tokens, enabling wallet connection, real-time balance tracking, token transfers, transaction history, and holder management through Ethereum smart contracts.</p>
+        <div class="tags tags-sm">
+          <span class="tag">React.js</span><span class="tag">Solidity</span><span class="tag">Hardhat</span>
+          <span class="tag">ethers.js</span><span class="tag">OpenZeppelin</span><span class="tag">Ethereum</span>
+        </div>
+        <a class="link-out" href="#">GitHub <svg class="ico" width="15" height="15"><use href="#i-ne"/></svg></a>
+      </div>
+    </article>
+
+    
+   
+
+    <article class="card" data-reveal>
+      <div class="shot shot-16x10" data-label="Drop CrowdFunding DApp screenshot"><img src="assets/1744440763506.jpg" alt="CrowdFunding DApp"></div>
+      <div class="card-body">
+        <div class="card-top"><span class="card-cat">Blockchain</span><span class="card-num">02</span></div>
+        <h3 class="card-title">CrowdFunding DApp</h3>
+        <p class="card-desc">Built a decentralized crowdfunding platform where users can securely fund campaigns using MetaMask and Ethereum. Implemented Solidity smart contracts with owner-based campaign creation, enabling transparent and trustless fundraising on the blockchain.</p>
+        <div class="tags tags-sm">
+          <span class="tag">React.js</span><span class="tag">Solidity</span><span class="tag">Hardhat</span>
+          <span class="tag">ethers.js</span><span class="tag">OpenZeppelin</span><span class="tag">Ethereum</span>
+        </div>
+        <a class="link-out" href="#">GitHub <svg class="ico" width="15" height="15"><use href="#i-ne"/></svg></a>
+      </div>
+    </article>
+
+    <article class="card" data-reveal>
+      <div class="shot shot-16x10 " data-label="Drop Portfolio Website screenshot"><img src="assets/Screenshot (497).png" alt="Portfolio Website"></div>
+      <div class="card-body">
+        <div class="card-top"><span class="card-cat">Website</span><span class="card-num">03</span></div>
+        <h3 class="card-title">Portfolio Website</h3>
+        <p class="card-desc">Designed and developed a modern cinematic-style website inspired by the media and film distribution industry, featuring premium UI/UX, smooth animations, interactive sections, and responsive layouts. Leveraged AI to accelerate ideation and content exploration while independently implementing the frontend using HTML, CSS, and JavaScript</p>
+        <div class="tags tags-sm">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card" data-reveal>
+      <div class="shot shot-16x10 " data-label="Drop AI Budget Tracker screenshot"><img src="assets/AI-BUDJET.png" alt="AI Budget Tracker"></div>
+      <div class="card-body">
+        <div class="card-top"><span class="card-cat">AI APP</span><span class="card-num">04</span></div>
+        <h3 class="card-title">AI Budget Tracker</h3>
+        <p class="card-desc">Developed an AI-powered personal finance application that helps users manage budgets, track expenses, and receive AI-generated spending insights and future expense predictions. Implemented secure authentication and personalized financial recommendations.</p>
+        <div class="tags tags-sm">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+        </div>
+        <a class="link-out" href="#">GitHub <svg class="ico" width="15" height="15"><use href="#i-ne"/></svg></a>
+      </div>
+    </article>
+
+    <article class="card" data-reveal>
+      <div class="shot shot-16x10 " data-label="Drop Blog Application screenshot"><img src="assets/blodapp.png" alt="Blog Application"></div>
+      <div class="card-body">
+        <div class="card-top"><span class="card-cat">Blog APP</span><span class="card-num">05</span></div>
+        <h3 class="card-title">Blog Application</h3>
+        <p class="card-desc">Created a full-featured Blog App using the MERN stack with JWT auth, category-based sorting, likes, comments, search, and a user dashboard — all styled with responsive Bootstrap UI.</p>
+        <div class="tags tags-sm">
+          <span class="tag">React</span><span class="tag">Nodejs</span><span class="tag">Expressjs</span><span class="tag">Mongodb</span>
+        </div>
+        <a class="link-out" href="#">GitHub <svg class="ico" width="15" height="15"><use href="#i-ne"/></svg></a>
+      </div>
+    </article>
+
+    <article class="card" data-reveal>
+      <div class="shot shot-16x10 " data-label="Drop Lerning Management SaaS screenshot"><img src="assets/LMS.png" alt="Lerning Management SaaS"></div>
+      <div class="card-body">
+        <div class="card-top"><span class="card-cat">SaaS</span><span class="card-num">06</span></div>
+        <h3 class="card-title">Lerning Management SaaS</h3>
+        <p class="card-desc">A full-stack MERN application featuring secure authentication, course management, Razorpay payment integration, Cloudinary image uploads, and dedicated dashboards for students and administrators.</p>
+        <div class="tags tags-sm">
+          <span class="tag">React</span><span class="tag">CSS</span><span class="tag">Nodejs</span>
+          <span class="tag">Expressjs</span><span class="tag">Mongodb</span><span class="tag">Razorpay</span>
+        </div>
+        <a class="link-out" href="#">Frontend GitHub <svg class="ico" width="15" height="15"><use href="#i-ne"/></svg></a>
+      </div>
+    </article>
+
+     <article class="card" data-reveal> 
+  <div class="shot shot-16x10" data-label="Drop Taskflow task management app screenshot">
+    <img src="assets/Todo.png" alt="Taskflow Task Management App">
+  </div> 
+  <div class="card-body"> 
+    <div class="card-top"><span class="card-cat">SaaS</span><span class="card-num">06</span></div> 
+    <h3 class="card-title">Taskflow</h3> 
+    <p class="card-desc">Built a multi-tenant task management SaaS for small teams, featuring Supabase authentication, workspace-based permissions, email invitations, Row Level Security, and a collaborative To Do → Ongoing → Done task board. Designed subscription-based access control where expired Premium workspaces are automatically locked without deleting their data.</p> 
+    <div class="tags tags-sm"> 
+      <span class="tag">Nuxt 4</span><span class="tag">Vue 3</span><span class="tag">TypeScript</span> 
+      <span class="tag">Supabase</span><span class="tag">PostgreSQL</span><span class="tag">RLS</span>
+      <span class="tag">Nodemailer</span>
+    </div> 
+    <a class="link-out" href="https://github.com/yashmaurya321-crypto/Task-Management" target="_blank" rel="noopener noreferrer">GitHub <svg class="ico" width="15" height="15"><use href="#i-ne"/></svg></a> 
+  </div> 
+</article>
+  </div>
+</section>
+
+<section id="services">
+  <header class="sec-head">
+    <div class="eyebrow"><span><span class="mark"></span>~/services</span><span>Five services</span></div>
+    <h2 class="sec-title">What I can provide</h2>
+  </header>
+
+  <div class="svc" data-reveal>
+    <div class="svc-n">01</div>
+    <h3 class="svc-title">Frontend Development</h3>
+    <p class="svc-desc">Clean, maintainable interfaces built with semantic HTML, modern CSS and vanilla JavaScript.</p>
+  </div>
+  <div class="svc" data-reveal>
+    <div class="svc-n">02</div>
+    <h3 class="svc-title">Responsive Web Design</h3>
+    <p class="svc-desc">Layouts that adapt beautifully from a 4-inch phone to an ultrawide monitor.</p>
+  </div>
+  <div class="svc" data-reveal>
+    <div class="svc-n">03</div>
+    <h3 class="svc-title">UI Development</h3>
+    <p class="svc-desc">Design systems and reusable components that keep products consistent as they grow.</p>
+  </div>
+  <div class="svc" data-reveal>
+    <div class="svc-n">04</div>
+    <h3 class="svc-title">Performance Optimization</h3>
+    <p class="svc-desc">Faster loads, smoother scrolling, better Core Web Vitals — measured, not guessed.</p>
+  </div>
+  <div class="svc" data-reveal>
+    <div class="svc-n">05</div>
+    <h3 class="svc-title">Modern Web Applications</h3>
+    <p class="svc-desc">Interactive, app-like experiences on the web — from dashboards to full products.</p>
+  </div>
+</section>
+
+<section id="certifications">
+  <header class="sec-head">
+    <div class="eyebrow"><span><span class="mark"></span>~/certifications</span><span>Four certificates</span></div>
+    <h2 class="sec-title">Proof of the craft.</h2>
+  </header>
+
+  <div class="cards cards-sm">
+    <article class="card" data-reveal>
+      <div class="shot shot-4x3 shot-contain  " data-label="Drop certificate image"><img src="assets/javascript_basic certificate_page-0001.jpg" alt="Javascript Basic certificate"></div>
+      <div class="cert-body">
+        <span class="card-num">01</span>
+        <h3 class="cert-title">Javascript Basic certificate</h3>
+        <div class="cert-org">HackerRank</div>
+      </div>
+    </article>
+    <article class="card" data-reveal>
+      <div class="shot shot-4x3 shot-contain  " data-label="Drop certificate image"><img src="assets/MERN_page-0001.jpg" alt="MERN Certificate"></div>
+      <div class="cert-body">
+        <span class="card-num">02</span>
+        <h3 class="cert-title">MERN Certificate</h3>
+        <div class="cert-org">SkillUp</div>
+      </div>
+    </article>
+    <article class="card" data-reveal>
+      <div class="shot shot-4x3 shot-contain  " data-label="Drop certificate image"><img src="assets/react js_page-0001.jpg" alt="React Js Certificate"></div>
+      <div class="cert-body">
+        <span class="card-num">03</span>
+        <h3 class="cert-title">React Js Certificate</h3>
+        <div class="cert-org">Great Learning</div>
+      </div>
+    </article>
+    <article class="card" data-reveal>
+      <div class="shot shot-4x3 shot-contain  " data-label="Drop certificate image"><img src="assets/1733147307454.jpg" alt="Certificate of internship complete"></div>
+      <div class="cert-body">
+        <span class="card-num">04</span>
+        <h3 class="cert-title">Certificate of internship complete</h3>
+        <div class="cert-org">Geneus Solution</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <header class="sec-head" data-reveal>
+    <div class="eyebrow"><span><span class="mark mark-light blink"></span>~/contact</span><span>Open for work</span></div>
+    <h2 class="sec-title contact-title">Let's build<br>something.</h2>
+    <p class="sec-sub">Open to frontend and full-stack work, freelance builds and long-term product teams. The fastest way to reach me is email.</p>
+  </header>
+
+  <a class="c-row" href="mailto:yashmaurya2109@gmail.com">
+    <span class="c-k">Email</span>
+    <span class="c-v">yashmaurya2109@gmail.com</span>
+    <svg class="ico" width="18" height="18"><use href="#i-ne"/></svg>
+  </a>
+  <a class="c-row" href="https://www.linkedin.com/in/yash-maurya-48751b226/">
+    <span class="c-k">LinkedIn</span>
+    <span class="c-v">linkedin.com/in/your-handle</span>
+    <svg class="ico" width="18" height="18"><use href="#i-ne"/></svg>
+  </a>
+  <a class="c-row" href="https://github.com/yashmaurya321-crypto">
+    <span class="c-k">GitHub</span>
+    <span class="c-v">github.com/your-handle</span>
+    <svg class="ico" width="18" height="18"><use href="#i-ne"/></svg>
+  </a>
+
+  <footer class="foot">
+    <span>© 2026 Yash Maurya</span>
+  </footer>
+</section>
+
+<script src="index.js"></script>
 </body>
 </html>
